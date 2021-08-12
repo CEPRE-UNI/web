@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@600&display=swap');
+
 /*===== Colores =====*/
  :root {
   --pre-color: #9535B2;
@@ -852,6 +854,10 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 @media (max-width: 575px) {
+  .eventos .slide img{
+    width: 201px;
+    height: 113.06px;
+  }
   #hero .hero-img img {
     width: 90%;
   }
@@ -2346,3 +2352,84 @@ ol.carousel-indicators li.active {
   right: -10px;
 }
 
+/* Ruleta de eventos */
+@-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+.eventos .slider {
+  /* background: white; */
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125); */
+  height:200px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+/* .eventos .slider::before, .eventos .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+} */
+.eventos .slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.eventos .slider::before {
+  left: 0;
+  top: 0;
+}
+.eventos .slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.eventos .slider .slide {
+  height: 200px;
+  /* width: 250px; */
+}
+
+.eventos .slide img{
+  height: 171.56px;
+  width: 305px;
+  border-radius: .6rem;
+  margin-left: 20px;
+}
+.eventos h3{
+  font-family: 'Mulish', sans-serif;
+ 
+    
+}
+@media (max-width: 575px) {
+  .eventos .slider {
+    height: 114px;
+    /* width: 250px; */
+  }
+  .eventos .slide img{
+    width: 201px;
+    height: 113.06px;
+  }
+}
