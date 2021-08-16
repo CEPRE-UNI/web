@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 
+import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
@@ -42,7 +43,8 @@ import { WebgrafiaComponent } from './pages/descargas/webgrafia/webgrafia.compon
   imports: [
     BrowserModule,
     CarouselModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [{ provide: APP_BASE_HREF, useValue: '' }],
   bootstrap: [AppComponent]

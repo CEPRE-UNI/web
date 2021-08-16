@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { InfoPaginaService } from '../../services/info-pagina.service';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _eventos:InfoPaginaService) {
+    
+   }
 
   ngOnInit(): void {
   }
