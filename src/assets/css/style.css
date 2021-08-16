@@ -245,15 +245,77 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.navbar-h {
+  font-family: "Inter-Medium",system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-weight: 500;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 4px rgb(3 27 78 / 10%);
+  box-shadow: 0 2px 4px rgb(3 27 78 / 10%);
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  z-index:999999;
+  position: relative;
+  
+}
+.navbar-h .navbar-h-content {
+  background: #fff;
+  /* border-bottom: 1px solid #e5e8ed; */
+  color: #5b6987;
+  font-size: 12px;
+  height: 40px;
+  line-height: 11px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
+  max-width: 100%;
+}
+.utility{
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-h a{
+  color: #5b6987;
+  cursor: pointer;
+  padding: 5px 30px 0;
+}
+.navbar-h a:hover {
+  color: #3C7899;
+  text-decoration: none;
+}
+
+.navbar-h-content li{
+  text-decoration: none;
+  list-style: none;
+}
+.navbar-h span{
+  /* color: #0080ff; */
+  background-color: #00d7d2;
+    border-radius: 4px;
+    color: #031b4e;
+    font-size: 9px;
+    margin-right: 8px;
+    padding: 5px 8px 4px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 50px 0;
   /* background: rgba(125, 27, 15, 0.9) ; */
 }
 
 #header.header-scrolled, #header.header-inner-pages {
   background: rgba(125, 27, 15, 0.9) ;
+  padding: 8px 0;
 }
 
 #header .logo {
@@ -416,7 +478,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
-  top: 1rem;
+  top: 3.5rem;
   right: 15px;
   z-index: 9998;
   border: 0;
@@ -753,6 +815,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
+  .utility{
+    display: none;
+  }
     .modelo__prueba, .archivos__pre, .archivos__bas a{
     margin-top: .3rem;
   }
@@ -760,7 +825,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 85px;
 }
   #header {
-    padding: 10px 0;
+    padding: 50px 0;
   }
   #header .logo img {
     max-height: 40px;
@@ -854,6 +919,7 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 @media (max-width: 575px) {
+  
   .eventos .slide img{
     width: 201px;
     height: 113.06px;
