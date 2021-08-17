@@ -251,7 +251,6 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   -webkit-box-shadow: 0 2px 4px rgb(3 27 78 / 10%);
   box-shadow: 0 2px 4px rgb(3 27 78 / 10%);
-  font-size: 14px;
   line-height: 24px;
   display: block;
   z-index:999999;
@@ -270,7 +269,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  
   max-width: 100%;
 }
 .utility{
@@ -317,6 +315,9 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(125, 27, 15, 0.9) ;
   padding: 8px 0;
 }
+#header.header-scrolled::after.mobile-nav-toggle{
+ top: 0px;
+} 
 
 #header .logo {
   /* font-size:10rem; */
@@ -491,10 +492,29 @@ h1, h2, h3, h4, h5, h6 {
   text-align: right;
 }
 
+
 .mobile-nav-toggle i {
   color: #fff;
 }
+.mobile-nav-toggle-scroll {
+  position: fixed;
+  top: .8rem;
+  right: 15px;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
 
+
+.mobile-nav-toggle-scroll i {
+  color: #fff;
+}
 .mobile-nav {
   position: fixed;
   top: 55px;
@@ -591,7 +611,9 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background-image: url('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f2b705" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
   /*background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);*/
-  background: linear-gradient(to right, rgba(106 , 27, 15, 0.9) 0%, rgba(106, 27, 15, 0.9) 45%,rgba(238, 169, 169, 0.7) 100%), url("../img/cta-bg-sectorT.jpg") fixed center center;
+  background: linear-gradient(to right, rgba(106 , 27, 15, 0.9) 0%, rgba(106, 27, 15, 0.9) 45%,rgba(238, 169, 169, 0.7) 100%), url("../img/cta-bg-sectorT.jpg")  no-repeat center center;
+  
+  /* background-repeat: no-repeat; */
   /*background-image: linear-gradient(to right,#6A1B0F 0%, #6A1B0F 20%, #6A1B0F 35%, #eb9c9d 100%);*/
  /* background-image: linear-gradient(to right,#6A1B0F 0%, #7c2719 10%, #6A1B0F 40%, #f3d3d3 100%);*/
 }
@@ -815,6 +837,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
+  
   .utility{
     display: none;
   }
@@ -942,32 +965,58 @@ h1, h2, h3, h4, h5, h6 {
   }
   .suscribete__pie {
     display: visibility;
-    align-items: center;
-    background-color: var(--breadcrumbs);
-    box-shadow: 0 -2px 4px rgb(0 0 0 / 8%), 0 -4px 12px rgb(0 0 0 / 8%);
+    background: #fff;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     overflow-y: hidden;
-    padding: .5rem;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    width: 100%;
-    z-index: 9999;
-    transform: translateY(0);
     border-radius: 8px 8px 0 0;
-    transition: transform 250ms cubic-bezier(0,0,.38,.9);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 4px rgb(3 27 78 / 10%);
+    box-shadow: 0 2px 4px rgb(3 27 78 / 10%);
+    line-height: 24px;
+    z-index: 999999;
+    
 }
-.suscribete__pie_btn{
-
-  background-color: var(--rojo-color) !important;
-  color: var(--white-color)!important;
-  /* margin-left: 2rem; */
+.suscribete__pie a{
+  background: #fff;
+  /* border-bottom: 1px solid #e5e8ed; */
+  color: #5b6987;
+  font-size: 12px;
+  height: 40px;
+  line-height: 11px;
+  padding: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+  color: #5b6987;
+  cursor: pointer;
+  
+  
 }
-.suscribete__pie div a{
-  margin-left: 2rem;
+.suscribete__pie a:hover {
+  color: #3C7899;
+  text-decoration: none;
+}
+.suscribete__pie span{
+  background-color: var(--rojo-color);
+  border-radius: 4px;
+  color: #ffffff;
+  font-size: 9px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 8px 10px 7px;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 }
@@ -1746,6 +1795,13 @@ section {
   .pricing .box {
     max-width: 80%;
     margin: 0 auto 30px auto;
+  }
+  #hero{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
 }
 

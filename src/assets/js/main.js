@@ -39,7 +39,7 @@ $(document).on('click', '.mobile-nav .nav__link', function (e) {
       class: 'mobile-nav d-lg-none'
     });
     $('body').append($mobile_nav);
-    $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+    $('body').prepend('<button type="button" id="mobile-nav-toggle" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
     $('body').append('<div class="mobile-nav-overly"></div>');
 
     $(document).on('click', '.mobile-nav-toggle', function (e) {
@@ -74,10 +74,15 @@ $(document).on('click', '.mobile-nav .nav__link', function (e) {
 
 function scrollHeader(){
   const nav=document.getElementById('header')
+  const icon=document.getElementById('mobile-nav-toggle')
   if(this.scrollY >=10){
     nav.classList.add('header-scrolled');
+    icon.classList.remove('mobile-nav-toggle');
+    icon.classList.add('mobile-nav-toggle-scroll');
   }else{
     nav.classList.remove('header-scrolled');
+    icon.classList.remove('mobile-nav-toggle-scroll');
+    icon.classList.add('mobile-nav-toggle');
   }
 }
 window.addEventListener('scroll',scrollHeader )
