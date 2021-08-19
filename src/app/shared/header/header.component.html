@@ -1,54 +1,68 @@
 <nav class="navbar-h">
   <div class="navbar-h-content">
-    <a href="https://us02web.zoom.us/meeting/register/tZAkduCqqT8pG9Ho2aBKKOHf_8X69RCzKjpr"> Próxima charla <span>hoy</span> : Webinar Informativo 2 </a>
+    <p>Fin de inscripción: </p>
     <ul class="utility">
-      <li><a routerLink="pre">Cilo Preuniversitario</a></li>
-      <li><a routerLink="basico">Ciclo Básico</a></li>
+      <li>
+        <span *ngIf="time.days>=2">{{time.days}} días</span>
+        <span *ngIf="time.days<=1">{{time.days}} día</span>
+      </li>
+      <li>
+        <span *ngIf="time.hours>=2">{{time.hours}} horas</span>
+        <span *ngIf="time.hours<=1">{{time.hours}} hora</span>
+      </li>
+      <li>
+        <span *ngIf="time.minutes>=2">{{time.minutes}} minutos</span>
+        <span *ngIf="time.minutes<=1">{{time.minutes}} minuto</span>
+      </li>
+      <li>
+        <span *ngIf="time.seconds>=2">{{time.seconds}} segundos</span>
+        <span *ngIf="time.seconds<=1">{{time.seconds}} segundo</span>
+      </li>
     </ul>
   </div>
 </nav>
 <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
+  <div class="container d-flex align-items-center">
 
-      <!--<h1 class="logo mr-auto"><a href="index.html">Cepre-UNI</a></h1>
+    <!--<h1 class="logo mr-auto"><a href="index.html">Cepre-UNI</a></h1>
      Uncomment below if you prefer to use an image logo -->
-      <a routerLink="home" class="logo mr-auto"><img src="assets/img/logoT-b3.png" alt="" class="img-fluid"></a>
-      <nav class="nav-menu d-none d-lg-block" id="nav-menu">
-        <ul>
-          <li routerLinkActive="active"><a class="nav__link" routerLink="home">Inicio</a></li>
-          <li routerLinkActive="active"><a class="nav__link" routerLink="cepreuni">Por qué CEPRE-UNI</a></li>
-          
-          <!-- <li><a href="content/portafolio.html">Portafolio</a></li> -->
-          <li  class="drop-down"><a routerLink="#">Ciclos</a>
-            <ul>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="pre">PRE</a>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="basico">BÁSICO</a>
-            </ul>
-          </li>
-          <li class="drop-down"><a routerLink="">Descargas</a>
-            <ul>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="examenes">Exámenes</a></li>
-              <li routerLinkActive="active"> <a class="nav__link" routerLink="infografia">Infografías</a></li>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="bibliografia">Bibliografía</a></li>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="webgrafia">Webgrafía</a></li>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="webinar">Webinar</a></li>
-              <!-- <li routerLinkActive="active"><a routerLink="home">Olimpiadas</a></li> -->
-            </ul>
-          </li>
-          <li class="drop-down"><a routerLink="">Servicios<i class="modulo__avance">Nuevo</i></a>
-            <ul>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="psicologia">Psicología</a> </li>
-              <li> <a class="nav__link" routerLink="biblioteca">Biblioteca</a></li>
-             
-            </ul>
-          </li>
-          <li routerLinkActive="active"><a class="nav__link" routerLink="contacto">Contacto</a></li>
-        
+    <a routerLink="home" class="logo mr-auto"><img src="assets/img/logoT-b3.png" alt="" class="img-fluid"></a>
+    <nav class="nav-menu d-none d-lg-block" id="nav-menu">
+      <ul>
+        <li routerLinkActive="active"><a class="nav__link" routerLink="home">Inicio</a></li>
+        <li routerLinkActive="active"><a class="nav__link" routerLink="cepreuni">Por qué CEPRE-UNI</a></li>
 
-        </ul>
-      </nav><!-- .nav-menu -->
+        <!-- <li><a href="content/portafolio.html">Portafolio</a></li> -->
+        <li class="drop-down"><a routerLink="#">Ciclos</a>
+          <ul>
+            <li routerLinkActive="active"><a class="nav__link" routerLink="pre">PRE</a>
+            <li routerLinkActive="active"><a class="nav__link" routerLink="basico">BÁSICO</a>
+          </ul>
+        </li>
+        <li class="drop-down"><a routerLink="">Descargas</a>
+          <ul>
+            <li routerLinkActive="active"><a class="nav__link" routerLink="examenes">Exámenes</a></li>
+            <li routerLinkActive="active"> <a class="nav__link" routerLink="infografia">Infografías</a></li>
+            <li routerLinkActive="active"><a class="nav__link" routerLink="bibliografia">Bibliografía</a></li>
+            <li routerLinkActive="active"><a class="nav__link" routerLink="webgrafia">Webgrafía</a></li>
+            <li routerLinkActive="active"><a class="nav__link" routerLink="webinar">Webinar</a></li>
+            <!-- <li routerLinkActive="active"><a routerLink="home">Olimpiadas</a></li> -->
+          </ul>
+        </li>
+        <li class="drop-down"><a routerLink="">Servicios<i class="modulo__avance">Nuevo</i></a>
+          <ul>
+            <li routerLinkActive="active"><a class="nav__link" routerLink="psicologia">Psicología</a> </li>
+            <li> <a class="nav__link" routerLink="biblioteca">Biblioteca</a></li>
 
-      <a href="/my" class="get-started-btn scrollto">Aula Virtual</a>
+          </ul>
+        </li>
+        <li routerLinkActive="active"><a class="nav__link" routerLink="contacto">Contacto</a></li>
 
-    </div>
-  </header><!-- End Header -->
+
+      </ul>
+    </nav><!-- .nav-menu -->
+
+    <a href="/my" class="get-started-btn scrollto">Aula Virtual</a>
+
+  </div>
+</header><!-- End Header -->

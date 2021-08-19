@@ -251,8 +251,9 @@ h1, h2, h3, h4, h5, h6 {
   background: #fff;
   -webkit-box-shadow: 0 2px 4px rgb(3 27 78 / 10%);
   box-shadow: 0 2px 4px rgb(3 27 78 / 10%);
-  line-height: 24px;
-  display: block;
+  /* line-height: 24px; */
+  display: flex;
+  justify-content: center;
   z-index:999999;
   position: relative;
   
@@ -263,13 +264,17 @@ h1, h2, h3, h4, h5, h6 {
   color: #5b6987;
   font-size: 12px;
   height: 40px;
-  line-height: 11px;
-  padding: 10px 10px;
+  /* line-height: 11px; */
+ 
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 100%;
+}
+.navbar-h-content p{
+  /* padding-left: 2px; */
+  margin: 0;
 }
 .utility{
   margin: 0;
@@ -277,15 +282,6 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-}
-.navbar-h a{
-  color: #5b6987;
-  cursor: pointer;
-  padding: 5px 30px 0;
-}
-.navbar-h a:hover {
-  color: #3C7899;
-  text-decoration: none;
 }
 
 .navbar-h-content li{
@@ -298,7 +294,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
     color: #031b4e;
     font-size: 9px;
-    margin-right: 8px;
+    margin-right: 2px;
     padding: 5px 8px 4px;
     text-align: center;
     text-transform: uppercase;
@@ -838,9 +834,6 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991px) {
   
-  .utility{
-    display: none;
-  }
     .modelo__prueba, .archivos__pre, .archivos__bas a{
     margin-top: .3rem;
   }
@@ -1013,7 +1006,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 9px;
   margin-left: 10px;
   margin-right: 10px;
-  padding: 8px 10px 7px;
+  padding:5px 8px 5px;
   text-align: center;
   text-transform: uppercase;
   vertical-align: middle;
@@ -1809,6 +1802,38 @@ section {
   .pricing .box {
     max-width: 100%;
     margin: 0 auto 30px auto;
+  }
+  .navbar-h-content>*, .utility span{
+    font-size: 0.85em;
+  }
+  .navbar-h span{
+    margin-right:1px ;
+  }
+
+}
+@media (max-width: 360px) {
+  
+  .utility> li:nth-child(4){
+    display: none;
+  }
+  .navbar-h span{
+    margin-left:1px ;
+  }
+  .navbar-h-content>*, .utility span{
+    font-size: 0.8em;
+  }
+  #hero .hero-img img {
+    width: 78%;
+    margin-bottom: 1px;
+  }
+  #hero{
+    height: 100vh;
+  }
+  .suscribete__pie a{
+    font-size: .8em;
+  }
+  .suscribete__pie span{
+    font-size: .8em;
   }
 }
 
