@@ -3,20 +3,20 @@
     <p>Fin de inscripción: </p>
     <ul class="utility">
       <li>
-        <span *ngIf="time.days>=2">{{time.days}} días</span>
-        <span *ngIf="time.days<=1">{{time.days}} día</span>
+        <span *ngIf="time.days!=1">{{time.days}} días</span>
+        <span *ngIf="time.days==1">{{time.days}} día</span>
       </li>
       <li>
-        <span *ngIf="time.hours>=2">{{time.hours}} horas</span>
-        <span *ngIf="time.hours<=1">{{time.hours}} hora</span>
+        <span *ngIf="time.hours!=1">{{time.hours}} horas</span>
+        <span *ngIf="time.hours==1">{{time.hours}} hora</span>
       </li>
       <li>
-        <span *ngIf="time.minutes>=2">{{time.minutes}} minutos</span>
-        <span *ngIf="time.minutes<=1">{{time.minutes}} minuto</span>
+        <span *ngIf="time.minutes!=1">{{time.minutes}} minutos</span>
+        <span *ngIf="time.minutes==1">{{time.minutes}} minuto</span>
       </li>
       <li>
-        <span *ngIf="time.seconds>=2">{{time.seconds}} segundos</span>
-        <span *ngIf="time.seconds<=1">{{time.seconds}} segundo</span>
+        <span *ngIf="time.seconds!=1">{{time.seconds}} segundos</span>
+        <span *ngIf="time.seconds==1">{{time.seconds}} segundo</span>
       </li>
     </ul>
   </div>
