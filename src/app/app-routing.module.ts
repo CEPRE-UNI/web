@@ -12,6 +12,7 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
 import { WebgrafiaComponent } from './pages/descargas/webgrafia/webgrafia.component';
 import { PsicologiaComponent } from './pages/servicios/psicologia/psicologia.component';
 import { BlibliotecaComponent } from './pages/servicios/bliblioteca/bliblioteca.component';
+import { ContactPsicologiaComponent } from './pages/contact-psicologia/contact-psicologia.component';
 
 const app_routes:Routes=[
     {path: 'home', component: HomeComponent},
@@ -26,6 +27,7 @@ const app_routes:Routes=[
     {path: 'contacto', component: ContactoComponent},
     {path: 'psicologia', component: PsicologiaComponent},
     {path: 'biblioteca', component: BlibliotecaComponent},
+    {path: 'contacpsicologia', component: ContactPsicologiaComponent},
     {path: '**', pathMatch: 'full', redirectTo:'home'}
 ];
 

@@ -20,6 +20,7 @@ import { WebinarComponent } from './pages/descargas/webinar/webinar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { APP_BASE_HREF } from '@angular/common';
 import { WebgrafiaComponent } from './pages/descargas/webgrafia/webgrafia.component';
+import { ContactPsicologiaComponent } from './pages/contact-psicologia/contact-psicologia.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { WebgrafiaComponent } from './pages/descargas/webgrafia/webgrafia.compon
     ContactoComponent,
     WebinarComponent,
     WebgrafiaComponent,
+    ContactPsicologiaComponent,
     
   ],
   imports: [

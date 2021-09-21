@@ -20,7 +20,9 @@
   --cepreuni-color2: #6A1B0F;
   --rojo-color:#f44336;
 }
- 
+ a:hover{
+  text-decoration: none !important;
+}
 .modulo__avance {
   position: absolute;
   bottom: -13px;
@@ -254,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   /* line-height: 24px; */
   display: flex;
   justify-content: center;
-  z-index:999999;
+  z-index:99999;
   position: relative;
   
 }
@@ -300,6 +302,7 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
     vertical-align: middle;
 }
+
 #header {
   transition: all 0.5s;
   z-index: 997;
@@ -776,10 +779,17 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--white-color)!important;
   border-radius: .2rem;
 }
+.link__resultados {
+  font-family: "Inter-Medium",system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-color: #00d7d2!important;
+  color: var(--white-color)!important;
+  border-radius: .2rem;
+}
 .timeline__event__description a{
   background-color: var(--purpure-color-fondo);
   color: var(--purpure-color-text)!important;
   padding: .1rem .9rem;
+  
 }
 .timeline__event__description a:hover{
   
