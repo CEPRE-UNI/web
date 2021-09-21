@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { InfoPaginaService } from '../../services/info-pagina.service';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,14 @@ export class HomeComponent implements OnInit {
   constructor(public _eventos:InfoPaginaService) {
     
    }
-
+   alertInscrpcion(){
+    Swal.fire({
+      text: "Sé que estas entusiasmado, tendrás más información en Diciembre ",
+      icon: "info",
+      timer: 5000,
+      timerProgressBar: true
+  });
+  }
   ngOnInit(): void {
   }
   customOptions: OwlOptions = {

@@ -13,7 +13,7 @@ export class FooterComponent implements OnInit {
   } 
   alertInscrpcion(){
     Swal.fire({
-      text: "Se que estas entusiasmado, las inscripciones a la Prueba de Selección es el jueves 15 de julio",
+      text: "Sé que estas entusiasmado, tendrás más información en Diciembre ",
       icon: "info",
       timer: 5000,
       timerProgressBar: true

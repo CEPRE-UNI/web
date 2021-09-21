@@ -1,20 +1,28 @@
 <nav class="navbar-h">
   <div class="navbar-h-content ">
-    <p>Proceso de inscripción finalizó el <strong>20 de agosto </strong> <a target="_blank" href="http://cepre.uni.pe/resultados_psel_adm20221.htm"> <span> Ver  resultados</span> </a> </p>
-    <!-- <ul class="utility">
+    <p> <a href="https://us02web.zoom.us/meeting/register/tZYod-CqrTwtHtcH-iiBLZKVBvDWfHl6AV-7" target="_blank" rel="noopener noreferrer">Conversatorio CEPRE-UNI
+      <!-- <strong> Ingeniería Metalúrgica </strong> -->
+     </a> 
+      <!-- <a target="_blank" href="https://us02web.zoom.us/meeting/register/tZYod-CqrTwtHtcH-iiBLZKVBvDWfHl6AV-7 "> <span> Inscríbete</span> </a>  -->
+      </p>
+    <ul class="utility">
       <li>
-        <span>0 días</span>
+        <span *ngIf="time.days==0">0 días</span>
+        <span *ngIf="time.days>=1">{{time.days}} día</span>
       </li>
       <li>
-        <span>0 horas</span>
+        <span *ngIf="time.hours==0">0 h</span>
+        <span *ngIf="time.hours>=1">{{time.hours}} h</span>
       </li>
       <li>
-        <span>0 minutos</span>
+        <span *ngIf="time.minutes==0">0 m</span>
+        <span *ngIf="time.minutes>=1">{{time.minutes}} m</span>
       </li>
       <li>
-        <span>0 segundos</span>
+        <span *ngIf="time.seconds==0">0 s</span>
+        <span *ngIf="time.seconds>=1">{{time.seconds}} s</span>
       </li>
-    </ul> -->
+    </ul>
   </div>
 </nav>
 <header id="header" class="fixed-top ">
@@ -29,10 +37,12 @@
         <li routerLinkActive="active"><a class="nav__link" routerLink="cepreuni">Por qué CEPRE-UNI</a></li>
 
         <!-- <li><a href="content/portafolio.html">Portafolio</a></li> -->
-        <li class="drop-down"><a routerLink="#">Ciclos</a>
+        <li class="drop-down"><a href="#">Ciclos</a>
           <ul>
-            <li routerLinkActive="active"><a class="nav__link" routerLink="pre">PRE</a>
-            <li routerLinkActive="active"><a class="nav__link" routerLink="basico">BÁSICO</a>
+            <li routerLinkActive="active"><a class="nav__link" (click)="alertInscrpcion()" >Pre</a>
+            <li routerLinkActive="active"><a class="nav__link" (click)="alertInscrpcion()" >Básico</a>
+            <li routerLinkActive="active"><a class="nav__link" (click)="alertInscrpcion()">Escolar</a>
+            <li routerLinkActive="active"><a class="nav__link"(click)="alertInscrpcion()">Intensivo</a>
           </ul>
         </li>
         <li class="drop-down"><a routerLink="">Descargas</a>

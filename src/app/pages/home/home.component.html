@@ -30,7 +30,7 @@
                                
                                 <br>
                                 <div class="d-flex  justify-content-center ">
-                                    <a type="button" routerLink="/pre" class="btn btn-sm sabermas">Saber más</a>
+                                    <a type="button" (click)="alertInscrpcion()"  class="btn btn-sm sabermas">Saber más</a>
                                 </div>
 
                             </div>
@@ -68,7 +68,7 @@
                             <div class=" justify-content-center ">
                                 <br>
                                 <div class="d-flex  justify-content-center ">
-                                    <a routerLink="/basico" type="button" class="btn btn-sm sabermas">Saber más</a>
+                                    <a (click)="alertInscrpcion()"  type="button" class="btn btn-sm sabermas">Saber más</a>
                                 </div>
                             </div>
                         </div>
@@ -105,7 +105,7 @@
                             <div class=" justify-content-center ">
                                 <br>
                                 <div class="d-flex  justify-content-center ">
-                                    <a routerLink="/basico" type="button" class="btn btn-sm sabermas">Saber más</a>
+                                    <a (click)="alertInscrpcion()"  type="button" class="btn btn-sm sabermas">Saber más</a>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +142,7 @@
                             <div class=" justify-content-center ">
                                 <br>
                                 <div class="d-flex  justify-content-center ">
-                                    <a routerLink="/basico" type="button" class="btn btn-sm sabermas">Saber más</a>
+                                    <a (click)="alertInscrpcion()"  type="button" class="btn btn-sm sabermas">Saber más</a>
                                 </div>
                             </div>
                         </div>
@@ -196,7 +196,7 @@
                         <a class="logo mr-auto"><img src="assets/img/ciclos/CicloPre.png" alt="" class="img-fluid"></a>
     
                         <div class="card-body">
-                            <h4 class="title card-title"><a routerLink="/pre">Ciclo Preuniversitario</a></h4>
+                            <h4 class="title card-title"><a (click)="alertInscrpcion()" >Ciclo Preuniversitario</a></h4>
     
                             <p class="card-text">Dirigido a estudiantes egresados o que actualmente se encuentren
                                 estudiando el quinto año de
@@ -206,7 +206,7 @@
                             </p>
     
                             <div class="pre">
-                                <a routerLink="/pre" class="btn  btn-sm sabermas">Saber más...</a>
+                                <a (click)="alertInscrpcion()" class="btn  btn-sm sabermas">Saber más...</a>
                             </div>
                         </div>
                     </div>
@@ -216,7 +216,7 @@
                         <a class="logo mr-auto"><img src="assets/img/ciclos/CicloBasico.png" alt="" class="img-fluid"></a>
     
                         <div class="card-body">
-                            <h4 class="title card-title"><a routerLink="/basico">Ciclo Básico</a></h4>
+                            <h4 class="title card-title"><a (click)="alertInscrpcion()" >Ciclo Básico</a></h4>
     
                             <p class="card-text">Dirigido a estudiantes o egresados de secundaria que recién inician su
                                 etapa de preparación
@@ -224,7 +224,7 @@
                             </p>
     
                             <div class="bas">
-                                <a routerLink="/basico" class="btn btn-sm sabermas">Saber más...</a>
+                                <a (click)="alertInscrpcion()"  class="btn btn-sm sabermas">Saber más...</a>
                             </div>
                         </div>
                     </div>
@@ -234,14 +234,14 @@
                         <a class="logo mr-auto"><img src="assets/img/ciclos/CicloEscolar.png" alt="" class="img-fluid"></a>
     
                         <div class="card-body">
-                            <h4 class="title card-title"><a routerLink="/basico">Ciclo Escolar</a></h4>
+                            <h4 class="title card-title"><a (click)="alertInscrpcion()" >Ciclo Escolar</a></h4>
     
                             <p class="card-text">
                                 Este ciclo esta destinado para aquellos estudiantes que han culminado el 2<sup>do</sup>,  3<sup>ro</sup> o  4<sup>to</sup>año de secundaria y que deseen adelantar con los cursos que serán llevados en el periodo académico.
                             </p>
     
                             <div class="bas">
-                                <a routerLink="/basico" class="btn btn-sm sabermas">Saber más...</a>
+                                <a (click)="alertInscrpcion()" class="btn btn-sm sabermas">Saber más...</a>
                             </div>
                         </div>
                     </div>
@@ -251,14 +251,14 @@
                         <a class="logo mr-auto"><img src="assets/img/ciclos/CicloIntensivo.png" alt="" class="img-fluid"></a>
     
                         <div class="card-body">
-                            <h4 class="title card-title"><a routerLink="/basico">Ciclo Intensivo</a></h4>
+                            <h4 class="title card-title"><a  >Ciclo Intensivo</a></h4>
     
                             <p class="card-text">
                                 Permite a nuestros alumnos adquirir competencias con relación a los temas y contenidos de los syllabus de los exámenes de la UNI, de tal forma que finalizado el ciclo, puedan rendir con mayores probabilidades de éxito, los exámenes de admisión a las diferentes universidades del Perú.
                             </p>
     
                             <div class="bas">
-                                <a routerLink="/basico" class="btn btn-sm sabermas">Saber más...</a>
+                                <a (click)="alertInscrpcion()"  class="btn btn-sm sabermas">Saber más...</a>
                             </div>
                         </div>
                     </div>
@@ -285,7 +285,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">
 

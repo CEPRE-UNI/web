@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import *  as countdown from 'countdown';
+import Swal from 'sweetalert2';
+
 interface Time{
   days:number;
   hours:number;
@@ -16,9 +18,16 @@ export class HeaderComponent implements OnInit {
   time:Time=null;
   timerId:number=null;
   constructor() { }
-
+  alertInscrpcion(){
+    Swal.fire({
+      text: "Sé que estas entusiasmado, tendrás más información en Diciembre ",
+      icon: "info",
+      timer: 5000,
+      timerProgressBar: true
+  });
+  }
   ngOnInit( ): void {
-    let date=new Date("2021-08-21");
+    let date=new Date("2021-09-21 18:00:00");
    countdown(date,(ts)=>{
      this.time=ts;
    }, countdown.DAYS |countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
