@@ -3,6 +3,8 @@
 /*===== Colores =====*/
  :root {
   --pre-color: #9535B2;
+  --escolar-color: #555AC0;
+  --intensivo-color: #e66f47;
   --basico-color: #23AD00;
   --purpure-color-text:#facff5;
   --purpure-color-fondo:#9251AC;
@@ -158,7 +160,7 @@ a {
 
 a:hover {
   color: #3C7899;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -688,6 +690,17 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--verde-color-fondo); 
   font-weight: 600;
 }
+.archivos__intensivo a{
+  margin-left: .4rem;
+  background-color: var(--intensivo-color);
+  color: var(--white-color); 
+  font-weight: 600;
+}
+.archivos__intensivo a:hover{
+  background-color: var(--white-color);
+  color: var(--intensivo-color); 
+  font-weight: 600;
+}
 .btn-get-started:hover {
   background: #D97904;
 }
@@ -753,7 +766,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 991px) {
-    .modelo__prueba, .archivos__pre, .archivos__bas a{
+    .modelo__prueba, .archivos__pre, .archivos__bas,.archivos__intensivo a{
     margin-top: .3rem;
   }
 #panel-pre-bas .container{

@@ -4,16 +4,18 @@
     <div class="cabeza"></div>
     <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
-            <h2 class="ciclo__title">Ciclo Preuniversitario Admisión 2022-1</h2>
-            <p class="mensaje__pruebaselecciom"><i class="icofont-bullhorn"></i> Utiliza correo gmail para inscribirte</p>
+            <h2 class="ciclo__title">
+                {{_pre.pre.titulo}}
+            </h2>
+            <!-- <p class="mensaje__pruebaselecciom"><i class="icofont-bullhorn"></i> Utiliza correo gmail para inscribirte</p> -->
             <!---botones descargas --->
             <div class="row">
 
-                <div class="">
+                <!-- <div class="">
                     <a class=" btn  btn-sm link__inscripcion"  href="http://cepre.uni.pe/Inscripcion_Adm2022-1.php"><i
                             class="icofont-ui-keyboard"></i>
                             Inscripción a Prueba de Selección</a>
-                </div>
+                </div> -->
 
                 <div class="btn-group btn-group btn-group-sm modelo__prueba" role="group" aria-label="Basic example">
                     <button class="btn ">Modelo Prueba</button>
@@ -66,7 +68,7 @@
                     <div class="col-lg-5 col-md-6">
                         <div class="icon-box">
                             <a target="_blank"
-                                class="logo mr-auto"><img src="assets/img/ciclos/pre.svg" alt="Ciclo preuniversitario"
+                                class="logo mr-auto"><img src="assets/img/ciclos/CicloPreDetalle.png" alt="Ciclo preuniversitario"
                                     class="img-fluid"></a>
                             <!--<div class="card-body">
                                         <h4 class="title card-title"><a href="http://cepre.uni.pe/Inscripverano.php">Inscripción Intensivo I Virtual</a></h4>
@@ -85,8 +87,7 @@
                                             <div class="row">
                                                 <div class="col-md-12col-sm-5">
                                                     <div class="text__pre__import fecha-icon font-weight-bold ">
-                                                        Ciclo Preuniversitario Admisión
-                                                        2022-1
+                                                        {{_pre.pre.titulo}}
                                                     </div>
                                                 </div>
 
@@ -108,8 +109,9 @@
                                                         Prueba de Selección</div>
                                                 </div>
                                                 <div class="col-md-7 col-sm-7">
-                                                    jueves 15/07/21 a
-                                                    viernes 20/08/21
+                                                    {{_pre.pre.fecha_incripcionPrueba_desde}} a  {{_pre.pre.fecha_incripcionPrueba_hasta}}
+                                                    <!-- jueves 15/07/21 a
+                                                    viernes 20/08/21 -->
                                                 </div>
                                             </div>
                                         </div>
@@ -121,19 +123,35 @@
                                     <div class="cicloinfo-fechas">
                                         <div class="container-fluid">
                                             <div class="row">
-                                                <div class="col-md-5 col-sm-5">
+                                                <div class="col-md-5 col-sm-5 mb-2">
                                                     <div class="text__pre__import fecha-icon font-weight-bold"><i
                                                             class="far fa-calendar-alt"></i> Prueba de Selección
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 col-sm-7 text__pre">domingo 22/08/2021
+                                                <div class="col-md-7 col-sm-7 text__pre  mb-2"> 
+                                                     {{_pre.pre.fecha_prueba}}
+                                                </div>
+                                                <div class="col-md-5 col-sm-5">
+                                                    <div class="font-weight-bold">
+                                                        Modelo de Prueba
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-sm-7 text__pre d-flex justify-content-center">
+                                                    <div class="row">
+                                                        <div class="btn-group btn-group btn-group-sm modelo__prueba" role="group" aria-label="Basic example">
+                                                          
+                                                            <a href="assets/descargas/PS--PRE ADM.2019-1.pdf" target="_blank" type="button" class="btn "><i
+                                                                    class="icofont-paper"></i> 2019-1</a>
+                                                            <a href="assets/descargas/PS--PRE ADM.2019-2.pdf" target="_blank" type="button" class="btn "><i
+                                                                    class="icofont-paper"></i> 2019-2</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!--- Fin horario --->
-                                </li>
-                                <!--- <strong><span class="font-weight-bold text-info" ><i class="far fa-calendar-alt"></i> Informes y matricula &nbsp;&nbsp;&nbsp;&nbsp;:</span></strong> Hasta 12 de diciembre --->
+                                </li> 
                                 <li class="list-group-item">
                                     <!---horario --->
                                     <div class="cicloinfo-fechas">
@@ -143,7 +161,9 @@
                                                     <div class="text__pre__import fecha-icon font-weight-bold"><i
                                                             class="fas fa-calendar-check"></i> Matrícula</div>
                                                 </div>
-                                                <div class="col-md-7 col-sm-7 text__pre">lunes 23 al viernes 27/08/2021
+                                                <div class="col-md-7 col-sm-7 text__pre">
+                                                    {{_pre.pre.fecha_matricula}}
+                                                    <!-- lunes 23 al viernes 27/08/2021 -->
                                                 </div>
                                             </div>
                                         </div>
@@ -161,14 +181,16 @@
                                                             class="fas fa-calendar-times"></i> Inicio de clases
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 col-sm-7 text__pre">martes 31/08/2021</div>
+                                                <div class="col-md-7 col-sm-7 text__pre">
+                                                    {{_pre.pre.fecha_inicio}}
+                                                    <!-- martes 31/08/2021 -->
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!--- Fin horario --->
 
                                 </li>
-
                                 <li class="list-group-item">
                                     <!---horario --->
                                     <div class="cicloinfo-fechas">
@@ -182,19 +204,19 @@
                                                 <div class="col-md-12 col-sm-6 text__pre text-center">
                                                     <table class="table table-sm">
                                                         <thead>
-                                                            <tr>
+                                                            <tr >
                                                                 <th scope="col">TURNO</th>
                                                                 <th scope="col">Lun a Sáb </th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
+                                                            <tr >
                                                                 <th scope="row">Mañana</th>
-                                                                <td>07:30 a 13:45</td>
+                                                                <td> {{_pre.pre.manana}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Tarde</th>
-                                                                <td>14:25 a 20:40</td>
+                                                                <td>{{_pre.pre.tarde}}</td>
                                                             </tr>
 
                                                         </tbody>
@@ -229,15 +251,15 @@
                                                             <tr>
                                                                 <th scope="row">Inscripción para la Prueba de
                                                                     Selección</th>
-                                                                <td>S/. 132,00</td>
+                                                                <td>{{_pre.pre.costo_incripcionPrueba}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Matrícula</th>
-                                                                <td>S/. 176,00</td>
+                                                                <td>{{_pre.pre.costo_matricula}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Cuota de pensión/mes (5 cuotas)</th>
-                                                                <td>S/. 430,00</td>
+                                                                <td>{{_pre.pre.costo_cuota}}</td>
                                                             </tr>
 
                                                         </tbody>
@@ -250,7 +272,31 @@
                                     <!--- Fin horario --->
 
                                 </li>
+                                <li class="list-group-item">
+                                    <!---horario --->
+                                    <div class="cicloinfo-fechas">
+                                        <div class="container-fluid ">
+                                            <div class="row">
+                                                <!-- <div class="col-md-5 col-sm-5">
+                                                    <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                            class="fas fa-calendar-check"></i> Modelo Prueba</div>
+                                                </div> -->
+                                                <div class="col-md-12 col-sm-12 text__pre d-flex justify-content-center">
+                                                    <div class="row">
+                                                        <div class="btn-group btn-group btn-group-sm archivos__pre" role="group" aria-label="Basic example">
+                                                            <a href="assets/descargas/brochure/pre.pdf" target="_blank" type="button" class="btn "><i
+                                                                    class="icofont-list"></i> Brochure</a>
+                                                            <a href="assets/descargas/silabo/pre.pdf" target="_blank" type="button" class="btn "><i
+                                                                    class="icofont-list"></i> Sílabo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--- Fin horario --->
 
+                                </li>
                             </ul>
 
                         </div>
@@ -435,19 +481,19 @@
                     <tbody>
                         <tr>
                             <th scope="row">Inscripción para la Prueba de Selección</th>
-                            <td>jueves 15/07/2021 al viernes 20/08/2021</td>
+                            <td> {{_pre.pre.fecha_incripcionPrueba_desde}} a  {{_pre.pre.fecha_incripcionPrueba_hasta}}</td>
                         </tr>
                         <tr>
                             <th scope="row">Prueba de Selección</th>
-                            <td>domingo 22/08/2021</td>
+                            <td>{{_pre.pre.fecha_prueba}}</td>
                         </tr>
                         <tr>
                             <th scope="row">Matrícula</th>
-                            <td>lunes 23 al viernes 27/08/2021</td>
+                            <td>{{_pre.pre.fecha_matricula}}</td>
                         </tr>
                         <tr>
                             <th scope="row">Inicio de clases</th>
-                            <td>martes 31/08/2021</td>
+                            <td>{{_pre.pre.fecha_inicio}}</td>
                         </tr>
                         <!-- <tr>
                             <th scope="row">Primera Práctica Calificada</th>
@@ -526,9 +572,9 @@
 
                                 <!-- <p><small class="text-muted"><i class="far fa-edit"></i>Hasta el lunes 15 de
                                 marzo</small></p> -->
-                                <p>Las inscripciones se realizarán en el <a href="http://cepre.uni.pe/Inscripcion_Adm2022-1.php"
+                                <p>Las inscripciones se realizarán en el <a href="{{_pre.pre.link}}"
                                       class="btn btn-sm" >Link</a>
-                                     hasta el viernes 20 de agosto de 2021. <br> Sigue las indicaciones luego de inscribirte.</p>
+                                     hasta el {{_pre.pre.fecha_incripcionPrueba_hasta}}. <br> Sigue las indicaciones luego de inscribirte.</p>
                             </div>
                         </div>
                     </div>
@@ -566,7 +612,7 @@
                             <div class="timeline__event__description">
 
                                 <div class="timeline-body">
-                                    <p> El <strong>sábado 21 de agosto</strong> te llegará a tu correo electrónico un
+                                    <p> ... <strong>{{_pre.pre.fecha_confirmacion}}</strong> te llegará a tu correo electrónico un
                                         mensaje con las indicaciones, credenciales y el procedimiento para el acceso a la Prueba de Selección.
                                     </p>
                                     <p> <strong>¡RECUERDA</strong> que el mensaje será enviando al correo electrónico que indicaste
@@ -589,7 +635,7 @@
                             Proceso de matrícula
                           </div>
                           <div class="timeline__event__description">
-                            <p>El lunes 23 de agosto, después de rendir la Prueba de Selección, recibirás las
+                            <p>... <strong>{{_pre.pre.fecha_correo}} </strong>, después de rendir la Prueba de Selección, recibirás las
                                 indicaciones mediante correo electrónico</p>
                           </div>
                         </div>

@@ -20,6 +20,8 @@ import { WebinarComponent } from './pages/descargas/webinar/webinar.component';
 import { AppRoutingModule } from './app-routing.module';
 import { APP_BASE_HREF } from '@angular/common';
 import { WebgrafiaComponent } from './pages/descargas/webgrafia/webgrafia.component';
+import { EscolarComponent } from './pages/ciclos/escolar/escolar.component';
+import { IntensivoComponent } from './pages/ciclos/intensivo/intensivo.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { WebgrafiaComponent } from './pages/descargas/webgrafia/webgrafia.compon
     ContactoComponent,
     WebinarComponent,
     WebgrafiaComponent,
+    EscolarComponent,
+    IntensivoComponent,
     
   ],
   imports: [

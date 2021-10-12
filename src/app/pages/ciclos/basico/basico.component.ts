@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
+import { InfoPaginaService } from '../../../services/info-pagina.service';
 @Component({
   selector: 'app-basico',
   templateUrl: './basico.component.html',
@@ -7,7 +8,7 @@ import Swal from 'sweetalert2';
 })
 export class BasicoComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _basico:InfoPaginaService) { }
 
   ngOnInit(): void {
   }

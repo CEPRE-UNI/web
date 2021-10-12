@@ -1,0 +1,586 @@
+<main id="main">
+    <div class="headeritems"></div>
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="cabeza"></div>
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="container">
+            <h2 class="ciclo__title">{{_data.escolar.titulo}}</h2>
+            <div class="row float-center ">
+                <div id="prueba_seleccion" class="btn-group btn-group btn-group-sm modelo__prueba" role="group"
+                    aria-label="Basic example">
+                    <a href="assets/descargas/brochure/brochureEscolar.pdf" target="_blank" type="button"
+                        class="btn "><i class="icofont-list"></i> Brochure</a>
+                    <a href="assets/descargas/silabo/silaboEscolar.pdf" target="_blank" type="button" class="btn ">
+                        <i class="icofont-list"></i> Sílabo</a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+        <!--- Fin botones descargas --->
+
+    </section><!-- End Breadcrumbs -->
+    <div class="tabs">
+
+        <input type="radio" id="tab1" name="tab-control" checked>
+        <input type="radio" id="tab2" name="tab-control">
+        <input type="radio" id="tab3" name="tab-control">
+        <input type="radio" id="tab4" name="tab-control">
+        <input type="radio" id="tab5" name="tab-control">
+        <ul class="ul">
+            <li class="li" title="Información General"><label for="tab1" role="button"><i
+                        class="icofont-info-circle"></i><br><span>Información General</span></label></li>
+            <li class="li" title="Requerimiento"><label for="tab2" role="button"><i
+                        class="icofont-school-bag"></i><br><span> Requerimientos</span></label></li>
+            <li class="li" title="Ofrecemos"><label for="tab3" role="button"><i
+                        class="icofont-brain-alt"></i><br><span>Ofrecemos</span></label></li>
+            <li class="li" title="Cronograma"><label for="tab4" role="button"><i
+                        class="icofont-ui-calendar"></i><br><span>Cronograma</span></label></li>
+            <li class="li" title="Inscripción"><label for="tab5" role="button"><i
+                        class="icofont-group-students"></i><br><span>Inscripción</span></label></li>
+        </ul>
+
+        <div class="slider">
+            <div class="indicator"></div>
+        </div>
+        <div class="content">
+            <!-- ======= Portfolio Details Section =======  -->
+            <section id="portfolio-details" class="portfolio-details">
+                <!-- <div class="container"> -->
+                <h2 class="movil__title">Información General</h2>
+                <div class="row">
+                    <div class="col-lg-5 col-md-6">
+                        <div class="icon-box">
+                            <a target="_blank" class="logo mr-auto"><img src="assets/img/ciclos/CicloEscolar.png"
+                                    alt="Ciclo preuniversitario" class="img-fluid"></a>
+                            <!--<div class="card-body">
+                                      <h4 class="title card-title"><a href="http://cepre.uni.pe/Inscripverano.php">Inscripción Intensivo I Virtual</a></h4>
+                                     
+                                    </div>-->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-7 col-md-6">
+                        <div class="card">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">
+                                    <!---horario --->
+                                    <div class="cicloinfo-fechas">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12col-sm-5">
+                                                    <div class="text__pre__import fecha-icon font-weight-bold ">
+                                                        {{_data.escolar.titulo}}
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--- Fin horario --->
+
+
+                                </li>
+                                <li class="list-group-item">
+                                    <!---horario --->
+                                    <div class="cicloinfo-fechas">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-5">
+                                                    <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                            class="far fa-calendar-alt"></i> Inscripción y matrícula
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-sm-7">
+                                                    {{_data.escolar.fecha_incripcionPrueba_desde}} al
+                                                    {{_data.escolar.fecha_incripcionPrueba_hasta}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--- Fin horario --->
+                                </li>
+                                <li class="list-group-item">
+                                    <!---horario --->
+                                    <div class="cicloinfo-fechas">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-5">
+                                                    <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                            class="fas fa-calendar-times"></i> Inicio de clases
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-sm-7 text__pre"> {{_data.escolar.fecha_inicio}}
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--- Fin horario --->
+
+                                </li>
+                                <li class="list-group-item">
+                                    <!---horario --->
+                                    <div class="cicloinfo-fechas">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12">
+                                                    <div
+                                                        class="text__pre__import ciclofecha-tituE fecha-icon font-weight-bold">
+                                                        <i class="far fa-clock"></i>
+                                                        Horario de clases
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-sm-6 ciclofecha-text text-center">
+                                                    <table class="table table-sm">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">TURNO</th>
+                                                                <th scope="col">Lun a Vie</th>
+                                                                <th scope="col">Sáb</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">Mañana</th>
+                                                                <td>08:10 a 12:10</td>
+                                                                <td>07:30 a 13:20</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Tarde</th>
+                                                                <td>16:00 a 20:00</td>
+                                                                <td>14:25 a 20:15</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--- Fin horario --->
+
+                                </li>
+                                <li class="list-group-item">
+                                    <!---horario --->
+                                    <div class="cicloinfo-fechas">
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-5 col-sm-5">
+                                                    <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                            class="fas fa-coins"></i>
+                                                        Inversión
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-7 col-sm-7 text__pre">
+                                                    {{_data.escolar.costo_incripcionPrueba}} (único pago)
+                                                </div>
+
+                                                <!-- <div class="col-md-12 col-sm-6 text__pre">
+                                                    <table class="table table-sm">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">PROCESO</th>
+                                                                <th scope="col">COSTO</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">Inscripción para la Prueba de
+                                                                    Selección</th>
+                                                                <td> {{_data.escolar.costo_incripcionPrueba}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Matrícula</th>
+                                                                <td>{{_data.escolar.costo_matricula}}</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">Cuota de pensión/mes (5 cuotas)</th>
+                                                                <td>{{_data.escolar.costo_cuota}}</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+
+                                                </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--- Fin horario --->
+
+                                </li>
+                                <li class="list-group-item">
+                                    <!---horario --->
+                                    <div class="cicloinfo-fechas">
+                                        <div class="container-fluid ">
+                                            <div class="row">
+                                                <div class="col-md-12 col-sm-12  d-flex justify-content-center">
+                                                    <div class="row">
+                                                        <div class="btn-group btn-group btn-group-sm modelo__prueba"
+                                                            role="group" aria-label="Basic example">
+                                                            <a href="assets/descargas/brochure/brochureEscolar.pdf"
+                                                                target="_blank" type="button" class="btn "><i
+                                                                    class="icofont-list"></i> Brochure</a>
+                                                            <a href="assets/descargas/silabo/silaboEscolar.pdf"
+                                                                target="_blank" type="button" class="btn ">
+                                                                <i class="icofont-list"></i> Sílabo</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--- Fin horario --->
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="portfolio-description">
+                    <h2>Descripción</h2>
+                    <p>
+                        Este ciclo esta destinado para aquellos estudiantes que han culminado el 2do año de secundaria y
+                        que deseen adelantar con los cursos que serán llevados en el periodo académico 2021. También
+                        podrán inscribirse en este ciclo de nivelación, aquellos estudiantes que actualmente estén
+                        cursando el 3ro años de educación secundaria y que deseen afianzar los cursos de este año
+                        académico.
+                    </p>
+                    <h2>Dirigido a</h2>
+                    <p>
+                        estudiantes que egresan en el periodo 2020, egresados de educación secundaria y/o estudiantes
+                        en etapa escolar que tiene formación sólida en otras instituciones y que deseen profundizar y
+                        afianzar sus conocimiento en ciencias, orientados al logro de competir exitosamente en los
+                        exámenes de admisión de las universidades del Perú.
+                    </p>
+
+                </div>
+                <h2>Cursos </h2>
+                <div class="badge " style="width: 12rem;">
+                    <li>ÁLGEBRA</li>
+                </div>
+                <div class="badge " style="width: 12rem;">
+                    <li>ARITMÉTICA</li>
+                </div>
+                <div class="badge " style="width: 12rem;">
+                    <li>FÍSICA </li>
+                </div>
+                <div class="badge " style="width: 12rem;">
+                    <li> GEOMETRÍA</li>
+                </div>
+                <div class="badge " style="width: 12rem;">
+                    <li>QUÍMICA</li>
+                </div>
+                <div class="badge " style="width: 12rem;">
+                    <li>TRIGONOMETRÍA</li>
+                </div>
+                <div class="badge " style="width: 12rem;">
+                    <li>LENGUAJE</li>
+                </div>
+
+                <!-- </div> -->
+            </section>
+            <section id="portfolio-details" class="portfolio-details">
+                <h2 class="movil__title">Requerimientos</h2>
+                <div class="col-lg-12 col-md-12 ">
+                    <p class="text-center">Estos requerimientos son <strong>obligatorios</strong> para rendir las
+                        evaluaciones con
+                        el sistema de
+                        videovigilancia.</p>
+                    <div class="card">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <!---horario --->
+                                <div class="cicloinfo-fechas">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5">
+                                                <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                        class="fas fa-wifi"></i>
+                                                    internet</div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 text__pre">de alta velocidad</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- Fin horario --->
+                            </li>
+
+                            <li class="list-group-item">
+                                <!---horario --->
+                                <div class="cicloinfo-fechas">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5">
+                                                <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                        class="fas fa-camera-retro"></i> cámara web</div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 text__pre">720p recomendable</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- Fin horario --->
+                            </li>
+
+                            <li class="list-group-item">
+                                <!---horario --->
+                                <div class="cicloinfo-fechas">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5">
+                                                <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                        class="fab fa-chrome"></i>
+                                                    navegador web</div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 text__pre">Google Chrome</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- Fin horario --->
+                            </li>
+                            <li class="list-group-item">
+                                <!---horario --->
+                                <div class="cicloinfo-fechas">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5">
+                                                <div class="text__pre__import fecha-icon font-weight-bold"> <i
+                                                        class="fas fa-mobile-alt"></i>
+                                                    celular</div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 text__pre">de gama media</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- Fin horario --->
+                            </li>
+
+                            <li class="list-group-item">
+                                <!---horario --->
+                                <div class="cicloinfo-fechas">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5">
+                                                <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                        class="fas fa-laptop"></i>
+                                                    laptop o pc</div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 text__pre"> 4gb de memoria RAM como
+                                                mínimo</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--- Fin horario --->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio-details" class="portfolio-details">
+                <h2 class="movil__title">Ofrecemos</h2>
+                <div>
+                    <ul>
+                        <li>Una plataforma virtual robusta e intuitiva</li>
+                        <li>Exámenes virtuales: simulacros de exámenes tipo CEPRE-UNI</li>
+                        <li>Enseñanza virtual diseñada para el aprendizaje autónomo, y retroalimentado mediante
+                            autoevaluaciones
+                            asíncronas</li>
+                        <li>Catedráticos de la UNI y plana docente conformada por doctores, magísteres y profesionales
+                            titulados con amplia experiencia en la educación formativa preuniversitaria </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="portfolio-details" class="portfolio-details">
+                <h2 class="movil__title">Cronograma</h2>
+                <table class="table table-striped table-sm pre__table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Evento</th>
+                            <th scope="col">Fecha</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Inscripción para la Prueba de Selección</th>
+                            <td> {{_data.escolar.fecha_incripcionPrueba_desde}} a
+                                {{_data.escolar.fecha_incripcionPrueba_hasta}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prueba de Selección</th>
+                            <td> {{_data.escolar.fecha_prueba}} </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Matrícula</th>
+                            <td> {{_data.escolar.fecha_matricula}} </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Inicio de clases</th>
+                            <td> {{_data.escolar.fecha_inicio}} </td>
+                        </tr>
+                        <!-- <tr>
+                            <th scope="row">Primera Práctica Calificada</th>
+                           
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Segunda Práctica Calificada</th>
+                            
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Primer Examen Parcial</th>
+                            
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tercera Práctica Calificada</th>
+                           
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cuarta Práctica Calificada</th>
+                           
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Segundo Examen Parcial</th>
+                           
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Quinta Práctica Calificada</th>
+                            
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sexta Práctica Calificada</th>
+                           
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Séptima Práctica Calificada</th>
+                           
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Examen Final</th>
+                           
+                            <td>---</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Prueba de Aptitud Vocacional</th>
+                           
+                        </tr> -->
+
+
+                    </tbody>
+                </table>
+            </section>
+            <section id="portfolio-details" class="portfolio-details">
+                <h2 class="movil__title">Inscripción</h2>
+                <div class="timeline">
+                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                        <div class="timeline__event__icon ">
+                            <i class="icofont-ui-keyboard"></i>
+
+                        </div>
+                        <div class="timeline__event__date">
+                            1 <sup>ro</sup>
+                        </div>
+                        <div class="timeline__event__content ">
+                            <div class="timeline__event__title">
+                                Inscribirse para la Prueba de Selección
+                            </div>
+                            <p class="mensaje__pruebaselecciom"><i class="icofont-bullhorn"></i> Utiliza correo gmail
+                                para inscribirte</p>
+                            <div class="timeline__event__description">
+
+                                <!-- <p><small class="text-muted"><i class="far fa-edit"></i>Hasta el lunes 15 de
+                                marzo</small></p> -->
+                                <p>Las inscripciones se realizarán en el <a href="{{_data.escolar.link}}"
+                                        class="btn btn-sm">Link</a>
+                                    hasta el {{_data.escolar.fecha_incripcionPrueba_hasta}}. <br> Sigue las indicaciones
+                                    luego de inscribirte.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                        <div class="timeline__event__icon">
+                            <i class="icofont-coins"></i>
+                        </div>
+                        <div class="timeline__event__date">
+                            2 <sup>do</sup>
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Realizar el Pago
+                            </div>
+                            <div class="timeline__event__description">
+                                <p> Después de 3 horas de haberse inscrito en el link, puedes acercarte al
+                                    banco para
+                                    efectuar el pago de la Prueba de Selección.</p>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                        <div class="timeline__event__icon">
+                            <i class="icofont-email"></i>
+                        </div>
+                        <div class="timeline__event__date">
+                            3<sup>ro</sup>
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Confirmación de inscripción
+                            </div>
+                            <div class="timeline__event__description">
+
+                                <div class="timeline-body">
+                                    <p> ... <strong>{{_data.escolar.fecha_confirmacion}}</strong> te llegará a tu correo
+                                        electrónico un
+                                        mensaje con las indicaciones, credenciales y el procedimiento para el acceso a
+                                        la Prueba de Selección.
+                                    </p>
+                                    <p> <strong>¡RECUERDA</strong> que el mensaje será enviando al correo electrónico
+                                        que indicaste
+                                        al inscribirte (debes estar pendiente)!</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="timeline__event animated fadeInUp timeline__event--type1">
+                        <div class="timeline__event__icon">
+                            <i class="icofont-id-card"></i>
+                        </div>
+                        <div class="timeline__event__date">
+                            4<sup>to</sup>
+                        </div>
+                        <div class="timeline__event__content">
+                            <div class="timeline__event__title">
+                                Proceso de matrícula
+                            </div>
+                            <div class="timeline__event__description">
+                                <p>... <strong>{{_data.escolar.fecha_correo}} </strong>, después de rendir la Prueba de
+                                    Selección, recibirás las
+                                    indicaciones mediante correo electrónico</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+</main><!-- End #main -->
