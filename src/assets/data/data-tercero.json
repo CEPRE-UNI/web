@@ -14,5 +14,7 @@
     "costo_incripcionPrueba":"S/. 550,00",
     "costo_cuota":"S/. 176,00",
     "costo_matricula":"S/. 430,00",
-    "link":"http://cepre.uni.pe/Inscripverano.php"
+    "link":"http://cepre.uni.pe/Inscripverano.php",
+    "silabo":"assets/descargas/silabo/silabo-escolar-3ro.pdf",
+    "brochure":"assets/descargas/brochure/brochure-escolar-3ro.pdf"
 }

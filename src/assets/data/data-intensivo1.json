@@ -1,0 +1,20 @@
+{
+    "titulo":"Ciclo Intensivo grupo 1 (Diciembre del 2021)",
+    "fecha_incripcionPrueba_desde":"02 nov. 2021",
+    "fecha_incripcionPrueba_hasta":"10 dic. 2021",
+    "fecha_prueba":"En programación: diciembre 2021",
+    "fecha_matricula":"En programación",
+    "fecha_inicio":"13 dic. 2021",
+    "fecha_fin":"25 feb. 2022",
+    "duracion":"10 semanas (6 días/sem)",
+    "fecha_confirmacion":"fecha en programación",
+    "fecha_correo":"fecha en  programación",
+    "manana":"07:30 - 13:20",
+    "tarde":"14:25 - 20:15",
+    "costo_incripcionPrueba":"S/. 750,00",
+    "costo_cuota":"S/. 176,00",
+    "costo_matricula":"S/. 600,00",
+    "link":"http://cepre.uni.pe/Inscripverano.php",
+    "silabo":"assets/descargas/silabo/silabo-intensivo-g1.pdf",
+    "brochure":"assets/descargas/brochure/brochure-intensivo-g1.pdf"
+}

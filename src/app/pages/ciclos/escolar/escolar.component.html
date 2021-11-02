@@ -4,7 +4,7 @@
     <div class="cabeza"></div>
     <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
-            <h2 class="ciclo__title">{{_data.escolar.titulo}}</h2>
+            <h2 class="ciclo__title">{{_data.quinto.titulo}}</h2>
             <div class="row float-center ">
                 <div id="prueba_seleccion" class="btn-group btn-group btn-group-sm modelo__prueba" role="group"
                     aria-label="Basic example">
@@ -72,7 +72,7 @@
                                             <div class="row">
                                                 <div class="col-md-12col-sm-5">
                                                     <div class="text__pre__import fecha-icon font-weight-bold ">
-                                                        {{_data.escolar.titulo}}
+                                                        {{_data.quinto.titulo}}
                                                     </div>
                                                 </div>
 
@@ -94,8 +94,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-7 col-sm-7">
-                                                    {{_data.escolar.fecha_incripcionPrueba_desde}} al
-                                                    {{_data.escolar.fecha_incripcionPrueba_hasta}}
+                                                    {{_data.quinto.fecha_incripcionPrueba_desde}} al
+                                                    {{_data.quinto.fecha_incripcionPrueba_hasta}}
                                                 </div>
                                             </div>
                                         </div>
@@ -112,7 +112,7 @@
                                                             class="fas fa-calendar-times"></i> Inicio de clases
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 col-sm-7 text__pre"> {{_data.escolar.fecha_inicio}}
+                                                <div class="col-md-7 col-sm-7 text__pre"> {{_data.quinto.fecha_inicio}}
                                                 </div>
                                             </div>
                                         </div>
@@ -175,7 +175,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-7 col-sm-7 text__pre">
-                                                    {{_data.escolar.costo_incripcionPrueba}} (único pago)
+                                                    {{_data.quinto.costo_incripcionPrueba}} (único pago)
                                                 </div>
 
                                                 <!-- <div class="col-md-12 col-sm-6 text__pre">
@@ -190,15 +190,15 @@
                                                             <tr>
                                                                 <th scope="row">Inscripción para la Prueba de
                                                                     Selección</th>
-                                                                <td> {{_data.escolar.costo_incripcionPrueba}}</td>
+                                                                <td> {{_data.quinto.costo_incripcionPrueba}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Matrícula</th>
-                                                                <td>{{_data.escolar.costo_matricula}}</td>
+                                                                <td>{{_data.quinto.costo_matricula}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Cuota de pensión/mes (5 cuotas)</th>
-                                                                <td>{{_data.escolar.costo_cuota}}</td>
+                                                                <td>{{_data.quinto.costo_cuota}}</td>
                                                             </tr>
 
                                                         </tbody>
@@ -408,20 +408,20 @@
                     <tbody>
                         <tr>
                             <th scope="row">Inscripción para la Prueba de Selección</th>
-                            <td> {{_data.escolar.fecha_incripcionPrueba_desde}} a
-                                {{_data.escolar.fecha_incripcionPrueba_hasta}}</td>
+                            <td> {{_data.quinto.fecha_incripcionPrueba_desde}} a
+                                {{_data.quinto.fecha_incripcionPrueba_hasta}}</td>
                         </tr>
                         <tr>
                             <th scope="row">Prueba de Selección</th>
-                            <td> {{_data.escolar.fecha_prueba}} </td>
+                            <td> {{_data.quinto.fecha_prueba}} </td>
                         </tr>
                         <tr>
                             <th scope="row">Matrícula</th>
-                            <td> {{_data.escolar.fecha_matricula}} </td>
+                            <td> {{_data.quinto.fecha_matricula}} </td>
                         </tr>
                         <tr>
                             <th scope="row">Inicio de clases</th>
-                            <td> {{_data.escolar.fecha_inicio}} </td>
+                            <td> {{_data.quinto.fecha_inicio}} </td>
                         </tr>
                         <!-- <tr>
                             <th scope="row">Primera Práctica Calificada</th>
@@ -503,9 +503,9 @@
 
                                 <!-- <p><small class="text-muted"><i class="far fa-edit"></i>Hasta el lunes 15 de
                                 marzo</small></p> -->
-                                <p>Las inscripciones se realizarán en el <a href="{{_data.escolar.link}}"
+                                <p>Las inscripciones se realizarán en el <a href="{{_data.quinto.link}}"
                                         class="btn btn-sm">Link</a>
-                                    hasta el {{_data.escolar.fecha_incripcionPrueba_hasta}}. <br> Sigue las indicaciones
+                                    hasta el {{_data.quinto.fecha_incripcionPrueba_hasta}}. <br> Sigue las indicaciones
                                     luego de inscribirte.</p>
                             </div>
                         </div>
@@ -544,7 +544,7 @@
                             <div class="timeline__event__description">
 
                                 <div class="timeline-body">
-                                    <p> ... <strong>{{_data.escolar.fecha_confirmacion}}</strong> te llegará a tu correo
+                                    <p> ... <strong>{{_data.quinto.fecha_confirmacion}}</strong> te llegará a tu correo
                                         electrónico un
                                         mensaje con las indicaciones, credenciales y el procedimiento para el acceso a
                                         la Prueba de Selección.
@@ -570,7 +570,7 @@
                                 Proceso de matrícula
                             </div>
                             <div class="timeline__event__description">
-                                <p>... <strong>{{_data.escolar.fecha_correo}} </strong>, después de rendir la Prueba de
+                                <p>... <strong>{{_data.quinto.fecha_correo}} </strong>, después de rendir la Prueba de
                                     Selección, recibirás las
                                     indicaciones mediante correo electrónico</p>
                             </div>

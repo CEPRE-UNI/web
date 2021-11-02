@@ -4,13 +4,24 @@
     <div class="cabeza"></div>
     <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
-            <h2 class="ciclo__title">{{_data.escolar.titulo}}</h2>
+            <h2 class="ciclo__title">{{_data.tercero.titulo}}</h2>
+            <p class="mensaje__pruebaselecciom"><i class="icofont-bullhorn"></i> Utiliza correo gmail para inscribirte
+            </p>
+
             <div class="row float-center ">
+                <!-- <div class="mr-">
+                    <a class=" btn  btn-sm link__inscripcion"  href="http://cepre.uni.pe/Inscripcion_Adm2022-1.php"><i
+                            class="icofont-ui-keyboard"></i>
+                            Inscripción</a>
+                </div> -->
                 <div id="prueba_seleccion" class="btn-group btn-group btn-group-sm modelo__prueba" role="group"
                     aria-label="Basic example">
-                    <a href="assets/descargas/brochure/brochureEscolar.pdf" target="_blank" type="button"
-                        class="btn "><i class="icofont-list"></i> Brochure</a>
-                    <a href="assets/descargas/silabo/silaboEscolar.pdf" target="_blank" type="button" class="btn ">
+                    <a class=" btn  btn-sm link__inscripcion mr-2" href="{{_data.tercero.link}}"><i
+                            class="icofont-ui-keyboard"></i>
+                        Inscripción</a>
+                    <a href="{{_data.tercero.brochure}}" target="_blank" type="button" class="btn "><i
+                            class="icofont-list"></i> Brochure</a>
+                    <a href="{{_data.tercero.silabo}}" target="_blank" type="button" class="btn ">
                         <i class="icofont-list"></i> Sílabo</a>
 
                 </div>
@@ -72,7 +83,7 @@
                                             <div class="row">
                                                 <div class="col-md-12col-sm-5">
                                                     <div class="text__pre__import fecha-icon font-weight-bold ">
-                                                        {{_data.escolar.titulo}}
+                                                        {{_data.tercero.titulo}}
                                                     </div>
                                                 </div>
 
@@ -91,8 +102,8 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-7 col-sm-7">
-                                                    {{_data.escolar.fecha_incripcionPrueba_desde}} al
-                                                    {{_data.escolar.fecha_incripcionPrueba_hasta}}
+                                                    {{_data.tercero.fecha_incripcionPrueba_desde}} al
+                                                    {{_data.tercero.fecha_incripcionPrueba_hasta}}
                                                 </div>
                                             </div>
                                         </div>
@@ -108,7 +119,7 @@
                                                             class="fas fa-calendar-times"></i> Inicio de clases
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 col-sm-7 text__pre"> {{_data.escolar.fecha_inicio}}
+                                                <div class="col-md-7 col-sm-7 text__pre"> {{_data.tercero.fecha_inicio}}
                                                 </div>
                                             </div>
                                         </div>
@@ -126,7 +137,7 @@
                                                             class="fas fa-calendar-times"></i> Finalización de clases
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 col-sm-7 text__pre"> {{_data.escolar.fecha_fin}}
+                                                <div class="col-md-7 col-sm-7 text__pre"> {{_data.tercero.fecha_fin}}
                                                 </div>
                                             </div>
                                         </div>
@@ -142,7 +153,7 @@
                                                             class="fas fa-calendar-times"></i> Duración
                                                     </div>
                                                 </div>
-                                                <div class="col-md-7 col-sm-7 text__pre"> {{_data.escolar.duracion}}
+                                                <div class="col-md-7 col-sm-7 text__pre"> {{_data.tercero.duracion}}
                                                 </div>
                                             </div>
                                         </div>
@@ -172,11 +183,11 @@
                                                         <tbody>
                                                             <tr>
                                                                 <th scope="row">Mañana</th>
-                                                                <td> {{_data.escolar.manana}}</td>
+                                                                <td> {{_data.tercero.manana}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Tarde</th>
-                                                                <td> {{_data.escolar.tarde}}</td>
+                                                                <td> {{_data.tercero.tarde}}</td>
                                                             </tr>
 
                                                         </tbody>
@@ -199,7 +210,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-md-7 col-sm-7 text__pre">
-                                                    {{_data.escolar.costo_incripcionPrueba}} (único pago)
+                                                    {{_data.tercero.costo_incripcionPrueba}} (único pago)
                                                 </div>
 
                                                 <!-- <div class="col-md-12 col-sm-6 text__pre">
@@ -214,15 +225,15 @@
                                                             <tr>
                                                                 <th scope="row">Inscripción para la Prueba de
                                                                     Selección</th>
-                                                                <td> {{_data.escolar.costo_incripcionPrueba}}</td>
+                                                                <td> {{_data.tercero.costo_incripcionPrueba}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Matrícula</th>
-                                                                <td>{{_data.escolar.costo_matricula}}</td>
+                                                                <td>{{_data.tercero.costo_matricula}}</td>
                                                             </tr>
                                                             <tr>
                                                                 <th scope="row">Cuota de pensión/mes (5 cuotas)</th>
-                                                                <td>{{_data.escolar.costo_cuota}}</td>
+                                                                <td>{{_data.tercero.costo_cuota}}</td>
                                                             </tr>
 
                                                         </tbody>
@@ -242,11 +253,11 @@
                                                     <div class="row">
                                                         <div class="btn-group btn-group btn-group-sm modelo__prueba"
                                                             role="group" aria-label="Basic example">
-                                                            <a href="assets/descargas/brochure/brochureEscolar.pdf"
-                                                                target="_blank" type="button" class="btn "><i
-                                                                    class="icofont-list"></i> Brochure</a>
-                                                            <a href="assets/descargas/silabo/silaboEscolar.pdf"
-                                                                target="_blank" type="button" class="btn ">
+                                                            <a href="{{_data.tercero.brochure}}" target="_blank"
+                                                                type="button" class="btn "><i class="icofont-list"></i>
+                                                                Brochure</a>
+                                                            <a href="{{_data.tercero.silabo}}" target="_blank"
+                                                                type="button" class="btn ">
                                                                 <i class="icofont-list"></i> Sílabo</a>
                                                         </div>
                                                     </div>
@@ -262,10 +273,12 @@
                 <div class="portfolio-description">
                     <h2>Descripción</h2>
                     <p>
-                        Este ciclo esta destinado para aquellos estudiantes que han culminado el 2do año de secundaria y
+                        Este ciclo esta destinado para aquellos estudiantes que han culminado el <strong>2 <sup>do</sup>
+                            año de secundaria</strong> y
                         que deseen adelantar con los cursos que serán llevados en el periodo académico 2021. También
                         podrán inscribirse en este ciclo de nivelación, aquellos estudiantes que actualmente estén
-                        cursando el 3ro años de educación secundaria y que deseen afianzar los cursos de este año
+                        cursando el 3<sup>ro</sup> años de educación secundaria y que deseen afianzar los cursos de este
+                        año
                         académico.
                     </p>
                     <h2>Dirigido a</h2>
@@ -424,24 +437,24 @@
                     <tbody>
                         <tr>
                             <th scope="row">Inscripción y matrícula</th>
-                            <td> {{_data.escolar.fecha_incripcionPrueba_desde}} al
-                                {{_data.escolar.fecha_incripcionPrueba_hasta}}</td>
+                            <td> {{_data.tercero.fecha_incripcionPrueba_desde}} al
+                                {{_data.tercero.fecha_incripcionPrueba_hasta}}</td>
                         </tr>
                         <!-- <tr>
                             <th scope="row">Prueba de Selección</th>
-                            <td> {{_data.escolar.fecha_prueba}} </td>
+                            <td> {{_data.tercero.fecha_prueba}} </td>
                         </tr>
                         <tr>
                             <th scope="row">Matrícula</th>
-                            <td> {{_data.escolar.fecha_matricula}} </td>
+                            <td> {{_data.tercero.fecha_matricula}} </td>
                         </tr> -->
                         <tr>
                             <th scope="row">Inicio de clases</th>
-                            <td> {{_data.escolar.fecha_inicio}} </td>
+                            <td> {{_data.tercero.fecha_inicio}} </td>
                         </tr>
                         <tr>
                             <th scope="row">Finalización de clases</th>
-                            <td> {{_data.escolar.fecha_fin}} </td>
+                            <td> {{_data.tercero.fecha_fin}} </td>
                         </tr>
                         <!-- <tr>
                             <th scope="row">Primera Práctica Calificada</th>
@@ -515,7 +528,7 @@
                         </div>
                         <div class="timeline__event__content ">
                             <div class="timeline__event__title">
-                                Inscribirse 
+                                Inscribirse
                             </div>
                             <p class="mensaje__pruebaselecciom"><i class="icofont-bullhorn"></i> Utiliza correo gmail
                                 para inscribirte</p>
@@ -523,9 +536,9 @@
 
                                 <!-- <p><small class="text-muted"><i class="far fa-edit"></i>Hasta el lunes 15 de
                                 marzo</small></p> -->
-                                <p>Las inscripciones se realizarán en el <a href="{{_data.escolar.link}}"
+                                <p>Las inscripciones se realizarán en el <a href="{{_data.tercero.link}}"
                                         class="btn btn-sm">Link</a>
-                                    hasta el {{_data.escolar.fecha_incripcionPrueba_hasta}}. <br> Sigue las indicaciones
+                                    hasta el {{_data.tercero.fecha_incripcionPrueba_hasta}}. <br> Sigue las indicaciones
                                     luego de inscribirte.</p>
                             </div>
                         </div>
@@ -542,7 +555,8 @@
                                 Realizar el Pago
                             </div>
                             <div class="timeline__event__description">
-                                <p> Después de inscribirte saldrá el horario y banco en donde debes ir a realizar el pago correspondiente. .</p>
+                                <p> Después de inscribirte saldrá el horario y banco en donde debes ir a realizar el
+                                    pago correspondiente. .</p>
                             </div>
                         </div>
                     </div>
@@ -560,7 +574,10 @@
                             <div class="timeline__event__description">
 
                                 <div class="timeline-body">
-                                    <p> Al día siguiente de haber realizado el pago, dirígete al mismo link de inscripción para descargar la constancia de matrícula, en ese documento encontraras todo lo necesario para iniciar tus clases virtuales. 
+                                    <p> Al día siguiente de haber realizado el pago, dirígete al mismo <a
+                                            href="{{_data.tercero.link}}" class="btn btn-sm">Link</a> de inscripción
+                                        para descargar la constancia de matrícula, en ese documento encontraras todo lo
+                                        necesario para iniciar tus clases virtuales.
                                     </p>
                                     <!-- <p> <strong>¡RECUERDA</strong> que el mensaje será enviando al correo electrónico
                                         que indicaste
@@ -583,7 +600,7 @@
                                 Proceso de matrícula
                             </div>
                             <div class="timeline__event__description">
-                                <p>... <strong>{{_data.escolar.fecha_correo}} </strong>, después de rendir la Prueba de
+                                <p>... <strong>{{_data.tercero.fecha_correo}} </strong>, después de rendir la Prueba de
                                     Selección, recibirás las
                                     indicaciones mediante correo electrónico</p>
                             </div>

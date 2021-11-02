@@ -15,5 +15,7 @@ export interface infoPaginaPre {
   costo_cuota?: string;
   costo_matricula?: string;
   link?: string;
+  brochure?: string;
+  silabo?: string;
 }
 

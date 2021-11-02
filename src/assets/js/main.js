@@ -27,6 +27,7 @@ window.onload = function () {
 /*==================== REMOVE MENU MOBILE ====================*/
 $(document).on('click', '.mobile-nav .nav__link', function (e) {
   $('body').removeClass('mobile-nav-active');
+  $('body').removeClass('mobile-nav-active');
   $(".mobile-nav-overly").css("display", "none");
   $('.mobile-nav-toggle i').toggleClass('icofont-close icofont-navigation-menu');
 });

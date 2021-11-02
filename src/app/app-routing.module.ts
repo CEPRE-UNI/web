@@ -22,6 +22,8 @@ import { CiclosComponent } from './pages/ciclos/ciclos.component';
 import { TerceroComponent } from './pages/ciclos/escolar/tercero/tercero.component';
 import { CuartoComponent } from './pages/ciclos/escolar/cuarto/cuarto.component';
 import { QuintoComponent } from './pages/ciclos/escolar/quinto/quinto.component';
+import { Grupo01Component } from './pages/ciclos/intensivo/grupo01/grupo01.component';
+import { Grupo02Component } from './pages/ciclos/intensivo/grupo02/grupo02.component';
 
 const app_routes:Routes=[
     {path: '', component: HomeComponent},
@@ -30,9 +32,12 @@ const app_routes:Routes=[
     {path: 'pre', component: PreComponent },
     {path: 'basico', component: BasicoComponent},
     {path: 'intensivo', component: IntensivoComponent},
+    {path: 'escolar', component: EscolarComponent},
     {path: 'tercero', component: TerceroComponent},
     {path: 'cuarto', component: CuartoComponent},
     {path: 'quinto', component: QuintoComponent},
+    {path: 'intensivo1', component: Grupo01Component},
+    {path: 'intensivo2', component: Grupo02Component},
     {path: 'examenes', component: ExamenesComponent},
     {path: 'infografia', component: InfografiaComponent},
     {path: 'bibliografia', component: BibliografiaComponent},

@@ -12,10 +12,21 @@
           <!-- <li><a href="content/portafolio.html">Portafolio</a></li> -->
           <li  class="drop-down"><a routerLink="#">Ciclos</a>
             <ul>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="pre">PRE</a>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="basico">Básico</a>
-              <li routerLinkActive="active"><a class="nav__link" routerLink="escolar">Escolar</a>
-                <li routerLinkActive="active"><a class="nav__link" routerLink="intensivo">Intensivo</a>
+              <li routerLinkActive="active"><a class="nav__link" routerLink="pre">PRE</a></li>
+              <li routerLinkActive="active"><a class="nav__link" routerLink="basico">Básico</a></li>
+              <li class="drop-down"><a>Escolar</a>
+                <ul>
+                  <li><a routerLink="tercero"> 3<sup>ro</sup> secundaria</a></li>
+                  <li><a routerLink="cuarto"> 4<sup>to</sup> secundaria</a></li>
+                  <li><a routerLink="quinto"> 5<sup>to</sup> secundaria</a></li>
+                </ul>
+              </li>
+              <li class="drop-down"><a >Intensivo</a>
+                <ul>
+                  <li><a routerLink="intensivo1">grupo 1</a></li>
+                  <li><a routerLink="intensivo2">grupo 2</a></li>
+                </ul>
+              </li>
             </ul>
           </li>
           <li class="drop-down"><a routerLink="">Descargas</a>

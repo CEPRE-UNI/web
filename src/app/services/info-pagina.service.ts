@@ -9,8 +9,12 @@ export class InfoPaginaService {
   eventos: any;
   pre: infoPaginaPre = {};
   basico: infoPaginaPre = {};
-  escolar: infoPaginaPre = {};
+  tercero: infoPaginaPre = {};
+  cuarto: infoPaginaPre = {};
+  quinto: infoPaginaPre = {};
   intensivo: infoPaginaPre = {};
+  intensivo1: infoPaginaPre = {};
+  intensivo2: infoPaginaPre = {};
   cargada = false;
   cargada_pre = false;
   cargada_basico = false;
@@ -20,8 +24,12 @@ export class InfoPaginaService {
     this.cargarEventos();
     this.cargarPre();
     this.cargarBasico();
-    this.cargartercero();
+    this.cargarTercero();
+    this.cargarCuarto();
+    this.cargarQuinto();
     this.cargarIntensivo();
+    this.cargarIntensivo1();
+    this.cargarIntensivo2();
 
   }
 
@@ -43,10 +51,34 @@ export class InfoPaginaService {
       this.basico = resp;
     })
   }
-  private cargartercero(){
+  private cargarTercero(){
     this.hhtp.get('assets/data/data-tercero.json').subscribe((resp:infoPaginaPre) =>{
      this.cargada_escolar=true
-     this.escolar=resp;
+     this.tercero=resp;
+   })
+  }
+  private cargarCuarto(){
+    this.hhtp.get('assets/data/data-cuarto.json').subscribe((resp:infoPaginaPre) =>{
+     this.cargada_escolar=true
+     this.cuarto=resp;
+   })
+  }
+  private cargarQuinto(){
+    this.hhtp.get('assets/data/data-quinto.json').subscribe((resp:infoPaginaPre) =>{
+     this.cargada_escolar=true
+     this.quinto=resp;
+   })
+  }
+  private cargarIntensivo1(){
+    this.hhtp.get('assets/data/data-intensivo1.json').subscribe((resp:infoPaginaPre) =>{
+     this.cargada_escolar=true
+     this.intensivo1=resp;
+   })
+  }
+  private cargarIntensivo2(){
+    this.hhtp.get('assets/data/data-intensivo2.json').subscribe((resp:infoPaginaPre) =>{
+     this.cargada_escolar=true
+     this.intensivo2=resp;
    })
   }
   private cargarIntensivo(){

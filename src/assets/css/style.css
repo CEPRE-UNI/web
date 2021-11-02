@@ -4,8 +4,10 @@
  :root {
   --pre-color: #9535B2;
   --escolar-color: #555AC0;
-  --escolar-color-hover: #9398f0;
-  --intensivo-color: #e66f47;
+  --escolar-color-hover: #34387a;
+  --intensivo-color: #e45f33ec;
+  --intensivo-color-hover: #f63e00;
+  --intensivo-color-impar: #f8ccbe;
   --basico-color: #23AD00;
   --purpure-color-text:#facff5;
   --purpure-color-fondo:#9251AC;
@@ -21,7 +23,7 @@
   --gray-color: #F0F1F3;
   --cepreuni-color1: rgb(106 , 27, 15);
   --cepreuni-color2: #6A1B0F;
-  --rojo-color:#f44336;
+  --rojo-color:#fd0000;
 }
  
 .modulo__avance {
@@ -676,6 +678,34 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Fin escolar*/
 
+/*intensivo*/
+
+.intensivo a:nth-child(2n+1){
+  color:var(--white-color);
+  background: var(--intensivo-color);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.intensivo a:nth-child(2n+1):hover{
+  color:var(--white-color);
+  background: var(--intensivo-color-hover);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.intensivo a:nth-child(2){
+  color:var(--intensivo-color);
+  background: var(--intensivo-color-impar);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.intensivo a:nth-child(2):hover{
+  color: var(--white-color);
+  background:var(--intensivo-color-hover);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+
+/*Fin intensivo*/
 .modelo__prueba a{
   /* font-size: 10rem; */
   background-color: var(--celeste-color-fodo);
@@ -690,6 +720,19 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--celeste-color-fodo); 
   font-weight: 600;
 }
+/*Intensivo archivos*/
+.archivos__intensivo a{
+  margin-left: .4rem;
+  background-color: var(--intensivo-color);
+  color: var(--white-color); 
+  font-weight: 600;
+}
+.archivos__intensivo a:hover{
+  background-color: var(--white-color);
+  color: var(--intensivo-color); 
+  font-weight: 600;
+}
+/*Fin Intensivo archivo*/
 .archivos__pre a{
   /* font-size: 10rem; */
   margin-left: .4rem;
@@ -720,17 +763,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--verde-color-fondo); 
   font-weight: 600;
 }
-.archivos__intensivo a{
-  margin-left: .4rem;
-  background-color: var(--intensivo-color);
-  color: var(--white-color); 
-  font-weight: 600;
-}
-.archivos__intensivo a:hover{
-  background-color: var(--white-color);
-  color: var(--intensivo-color); 
-  font-weight: 600;
-}
+
 .btn-get-started:hover {
   background: #D97904;
 }
