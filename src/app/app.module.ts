@@ -22,6 +22,10 @@ import { APP_BASE_HREF } from '@angular/common';
 import { WebgrafiaComponent } from './pages/descargas/webgrafia/webgrafia.component';
 import { EscolarComponent } from './pages/ciclos/escolar/escolar.component';
 import { IntensivoComponent } from './pages/ciclos/intensivo/intensivo.component';
+import { CiclosComponent } from './pages/ciclos/ciclos.component';
+import { TerceroComponent } from './pages/ciclos/escolar/tercero/tercero.component';
+import { CuartoComponent } from './pages/ciclos/escolar/cuarto/cuarto.component';
+import { QuintoComponent } from './pages/ciclos/escolar/quinto/quinto.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +46,10 @@ import { IntensivoComponent } from './pages/ciclos/intensivo/intensivo.component
     WebgrafiaComponent,
     EscolarComponent,
     IntensivoComponent,
+    CiclosComponent,
+    TerceroComponent,
+    CuartoComponent,
+    QuintoComponent,
     
   ],
   imports: [

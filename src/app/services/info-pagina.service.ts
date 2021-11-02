@@ -20,7 +20,7 @@ export class InfoPaginaService {
     this.cargarEventos();
     this.cargarPre();
     this.cargarBasico();
-    this.cargarEscolar();
+    this.cargartercero();
     this.cargarIntensivo();
 
   }
@@ -43,8 +43,8 @@ export class InfoPaginaService {
       this.basico = resp;
     })
   }
-  private cargarEscolar(){
-    this.hhtp.get('assets/data/data-escolar.json').subscribe((resp:infoPaginaPre) =>{
+  private cargartercero(){
+    this.hhtp.get('assets/data/data-tercero.json').subscribe((resp:infoPaginaPre) =>{
      this.cargada_escolar=true
      this.escolar=resp;
    })

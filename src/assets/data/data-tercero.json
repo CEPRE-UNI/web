@@ -1,0 +1,18 @@
+{
+    "titulo":"Actualización Escolar de 3ro de secundaria",
+    "fecha_incripcionPrueba_desde":"02 de noviembre 2021",
+    "fecha_incripcionPrueba_hasta":"31 de enero 2022",
+    "fecha_prueba":"En programación: diciembre 2021",
+    "fecha_matricula":"En programación",
+    "fecha_inicio":"03 de enero 2022",
+    "fecha_fin":"20 de febrero 2022",
+    "duracion":"8 semanas (5 días/sem)",
+    "fecha_confirmacion":"fecha en programación",
+    "fecha_correo":"fecha en  programación",
+    "manana":"08:10 - 13:05",
+    "tarde":"14:00 - 18:55",
+    "costo_incripcionPrueba":"S/. 550,00",
+    "costo_cuota":"S/. 176,00",
+    "costo_matricula":"S/. 430,00",
+    "link":"http://cepre.uni.pe/Inscripverano.php"
+}

@@ -5,6 +5,8 @@ export interface infoPaginaPre {
   fecha_prueba?: string;
   fecha_matricula?: string;
   fecha_inicio?: string;
+  fecha_fin?: string;
+  duracion?: string;
   fecha_confirmacion?: string;
   fecha_correo?: string;
   manana?: string;

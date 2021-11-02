@@ -4,6 +4,7 @@
  :root {
   --pre-color: #9535B2;
   --escolar-color: #555AC0;
+  --escolar-color-hover: #9398f0;
   --intensivo-color: #e66f47;
   --basico-color: #23AD00;
   --purpure-color-text:#facff5;
@@ -646,6 +647,35 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
   font-weight: 600;
 }
+/*Escolar*/
+
+.escolar a:nth-child(2n+1){
+  color:var(--white-color);
+  background: var(--escolar-color);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.escolar a:nth-child(2n+1):hover{
+  color:var(--white-color);
+  background: var(--escolar-color-hover);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.escolar a:nth-child(2){
+  color: var(--escolar-color);
+  background: #ffff;
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.escolar a:nth-child(2):hover{
+  color: var(--white-color);
+  background:var(--escolar-color-hover);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+
+/*Fin escolar*/
+
 .modelo__prueba a{
   /* font-size: 10rem; */
   background-color: var(--celeste-color-fodo);

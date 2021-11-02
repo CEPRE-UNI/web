@@ -18,14 +18,21 @@ import { PsicologiaComponent } from './pages/servicios/psicologia/psicologia.com
 import { BlibliotecaComponent } from './pages/servicios/bliblioteca/bliblioteca.component';
 import { IntensivoComponent } from './pages/ciclos/intensivo/intensivo.component';
 import { EscolarComponent } from './pages/ciclos/escolar/escolar.component';
+import { CiclosComponent } from './pages/ciclos/ciclos.component';
+import { TerceroComponent } from './pages/ciclos/escolar/tercero/tercero.component';
+import { CuartoComponent } from './pages/ciclos/escolar/cuarto/cuarto.component';
+import { QuintoComponent } from './pages/ciclos/escolar/quinto/quinto.component';
 
 const app_routes:Routes=[
     {path: '', component: HomeComponent},
     {path: 'cepreuni', component: CepreuniComponent},
+    {path: 'cilos', component: CiclosComponent},
     {path: 'pre', component: PreComponent },
     {path: 'basico', component: BasicoComponent},
     {path: 'intensivo', component: IntensivoComponent},
-    {path: 'escolar', component: EscolarComponent},
+    {path: 'tercero', component: TerceroComponent},
+    {path: 'cuarto', component: CuartoComponent},
+    {path: 'quinto', component: QuintoComponent},
     {path: 'examenes', component: ExamenesComponent},
     {path: 'infografia', component: InfografiaComponent},
     {path: 'bibliografia', component: BibliografiaComponent},
