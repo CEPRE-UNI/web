@@ -28,6 +28,8 @@ import { CuartoComponent } from './pages/ciclos/escolar/cuarto/cuarto.component'
 import { QuintoComponent } from './pages/ciclos/escolar/quinto/quinto.component';
 import { Grupo01Component } from './pages/ciclos/intensivo/grupo01/grupo01.component';
 import { Grupo02Component } from './pages/ciclos/intensivo/grupo02/grupo02.component';
+import { ResgistroComponent } from './pages/eventos/resgistro/resgistro.component';
+import { ConfirmacionComponent } from './pages/eventos/confirmacion/confirmacion.component';
 
 @NgModule({
   declarations: [
@@ -54,6 +56,8 @@ import { Grupo02Component } from './pages/ciclos/intensivo/grupo02/grupo02.compo
     QuintoComponent,
     Grupo01Component,
     Grupo02Component,
+    ResgistroComponent,
+    ConfirmacionComponent,
     
   ],
   imports: [

@@ -24,6 +24,8 @@ import { CuartoComponent } from './pages/ciclos/escolar/cuarto/cuarto.component'
 import { QuintoComponent } from './pages/ciclos/escolar/quinto/quinto.component';
 import { Grupo01Component } from './pages/ciclos/intensivo/grupo01/grupo01.component';
 import { Grupo02Component } from './pages/ciclos/intensivo/grupo02/grupo02.component';
+import { ResgistroComponent } from './pages/eventos/resgistro/resgistro.component';
+import { ConfirmacionComponent } from './pages/eventos/confirmacion/confirmacion.component';
 
 const app_routes:Routes=[
     {path: '', component: HomeComponent},
@@ -46,6 +48,8 @@ const app_routes:Routes=[
     {path: 'contacto', component: ContactoComponent},
     {path: 'psicologia', component: PsicologiaComponent},
     {path: 'biblioteca', component: BlibliotecaComponent},
+    {path: 'registro', component: ResgistroComponent},
+    {path: 'confirmacion', component: ConfirmacionComponent},
     {path: '**', pathMatch: 'full', redirectTo:'/'}
 ];
 
