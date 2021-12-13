@@ -1,5 +1,5 @@
 {
-    "titulo":"Ciclo Intensivo grupo 2 (Diciembre del 2021)",
+    "titulo":"Ciclo Intensivo grupo 2 (Enero del 2021)",
     "fecha_incripcionPrueba_desde":"02 nov. 2021",
     "fecha_incripcionPrueba_hasta":"31 dic. 2021",
     "fecha_prueba":"En programación: diciembre 2021",
@@ -15,6 +15,6 @@
     "costo_cuota":"S/. 176,00",
     "costo_matricula":"S/. 600,00",
     "link":"http://cepre.uni.pe/Inscripverano.php",
-    "silabo":"assets/descargas/silabo/silabo-intensivo-g1.pdf",
-    "brochure":"assets/descargas/brochure/brochure-intensivo-g1.pdf"
+    "silabo":"assets/descargas/silabo/silabo-intensivo-g2.pdf",
+    "brochure":"assets/descargas/brochure/brochure-intensivo-g2.pdf"
 }
