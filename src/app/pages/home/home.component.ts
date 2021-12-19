@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
 
   alertInscrpcion(){
     Swal.fire({
-      text: "Este grupo inició el 13 dic. 2021. Sin embargo, el grupo 2 está disponible. ",
+      text: "El grupo 1 inició el 13 dic. 2021. Sin embargo, el grupo 2 está disponible. ",
       icon: "info",
       timer: 5000,
       timerProgressBar: true
