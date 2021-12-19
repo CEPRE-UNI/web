@@ -32,7 +32,8 @@
                             <div class=" justify-content-center ">
                                 <br>
                                 <div class="d-flex  justify-content-center ">
-                                    <a href="http://cepre.uni.pe/Inscripverano.php" type="button" class="btn btn-sm link__inscripcion">
+                                    <a href="http://cepre.uni.pe/Inscripverano.php" type="button"
+                                        class="btn btn-sm link__inscripcion">
                                         inscríbete</a>
                                 </div>
                             </div>
@@ -57,19 +58,24 @@
                             <h1 class="text-center pre">CICLO </h1>
                             <h1 class="text-center pre"> INTENSIVO</h1>
                             <h1 class="text-center pre">2022-1</h1>
-                            <h2 class="text-center">Inscripciones  abiertas al grupo 1</h2>
+                            <h2 class="text-center">Inscripciones abiertas al grupo 1</h2>
                             <div class="d-flex justify-content-center ">
+                                <!-- d-none -->
                                 <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                                    <a routerLink="intensivo1"  type="button"
-                                        class="btn "><i class="fas fa-graduation-cap"></i> grupo 1</a>
-                                    <a routerLink="intensivo2" type="button" class="btn"><i class="fas fa-graduation-cap"></i> grupo 2</a>
-                                    
+                                    <a  type="button" (click)="alertInscrpcion()" class="btn d-none"><i
+                                            class="fas fa-graduation-cap"></i> grupo 1</a>
+                                            <a  type="button" (click)="alertInscrpcion()" class="btn "><i
+                                                class="fas fa-graduation-cap"></i> grupo 1</a>      
+                                    <a routerLink="intensivo2" type="button" class="btn"><i
+                                            class="fas fa-graduation-cap"></i> grupo 2</a>
+
                                 </div>
                             </div>
                             <div class=" justify-content-center ">
                                 <br>
                                 <div class="d-flex  justify-content-center ">
-                                    <a href="http://cepre.uni.pe/Inscripverano.php" type="button" class="btn btn-sm link__inscripcion">
+                                    <a href="http://cepre.uni.pe/Inscripverano.php" type="button"
+                                        class="btn btn-sm link__inscripcion">
                                         inscríbete</a>
                                 </div>
                             </div>
@@ -223,7 +229,8 @@
                             <div class=" justify-content-center ">
                                 <br>
                                 <div class="d-flex  justify-content-center ">
-                                    <a href="http://cepre.uni.pe/Inscripverano.php" type="button" class="btn btn-sm link__inscripcion">
+                                    <a href="http://cepre.uni.pe/Inscripverano.php" type="button"
+                                        class="btn btn-sm link__inscripcion">
                                         inscríbete</a>
                                 </div>
                             </div>
@@ -237,16 +244,19 @@
 
                         <div class="card-body">
                             <h4 class="title card-title"><a>Ciclo Intensivo</a></h4>
-<div class="intensivo">
-    <div class="d-flex justify-content-center ">
-        <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-            <a routerLink="intensivo1" type="button"
-                class="btn "><i class="fas fa-graduation-cap"></i> grupo 1</a>
-            <a routerLink="intensivo2" type="button" class="btn " disabled><i class="fas fa-graduation-cap" ></i> Grupo 2</a>
-            
-        </div>
-    </div>
-</div>
+                            <div class="intensivo">
+                                <div class="d-flex justify-content-center ">
+                                    <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
+                                        <a  type="button" class="btn d-none" (click)="alertInscrpcion()"><i
+                                                class="fas fa-graduation-cap "></i> grupo 1</a>
+                                                <a  type="button" class="btn " (click)="alertInscrpcion()"><i
+                                                    class="fas fa-graduation-cap"></i> grupo 1</a>
+                                        <a routerLink="intensivo2" type="button" class="btn " disabled><i
+                                                class="fas fa-graduation-cap"></i> Grupo 2</a>
+
+                                    </div>
+                                </div>
+                            </div>
                             <p class="card-text">
                                 Permite a nuestros alumnos adquirir competencias con relación a los temas y contenidos
                                 de los syllabus de los exámenes de la UNI, de tal forma que finalizado el ciclo, puedan
@@ -257,7 +267,8 @@
                             <div class=" justify-content-center ">
                                 <br>
                                 <div class="d-flex  justify-content-center ">
-                                    <a href="http://cepre.uni.pe/Inscripverano.php" type="button" class="btn btn-sm link__inscripcion">
+                                    <a href="http://cepre.uni.pe/Inscripverano.php" type="button"
+                                        class="btn btn-sm link__inscripcion">
                                         inscríbete</a>
                                 </div>
                             </div>
@@ -266,7 +277,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-left">
                     <div class="icon-box">
-                        <a class="logo mr-auto"><img src="assets/img/ciclos/CicloPre.png" alt="" style="filter: grayscale(1);" class="img-fluid"></a>
+                        <a class="logo mr-auto"><img src="assets/img/ciclos/CicloPre.png" alt=""
+                                style="filter: grayscale(1);" class="img-fluid"></a>
 
                         <div class="card-body">
                             <h4 class="title card-title"><a>Ciclo Preuniversitario</a></h4>
@@ -286,8 +298,8 @@
                 </div>
                 <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 " data-aos="fade-right">
                     <div class="icon-box">
-                        <a class="logo mr-auto"><img src="assets/img/ciclos/CicloBasico.png" alt="" style="filter: grayscale(1);"
-                                class="img-fluid"></a>
+                        <a class="logo mr-auto"><img src="assets/img/ciclos/CicloBasico.png" alt=""
+                                style="filter: grayscale(1);" class="img-fluid"></a>
 
                         <div class="card-body">
                             <h4 class="title card-title"><a>Ciclo Básico</a></h4>
@@ -386,14 +398,19 @@
             </div>
             <div class="modal-body ">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-12 col-sm-4 mt-2 ">
+                    <div class="col-12 col-sm-10 mt-2 ">
                         <div class="card">
                             <a href="https://cepreuni.net.pe/#/intensivo2" target="_bank">
                                 <img src="assets/img/comunicado/intensivo.png" class="card-img-top" alt="Conversatorio">
                             </a>
                         </div>
+                        <div class="modal-footer">
+                            <!-- <p>Míralo en vivo en los horario mostrados en el banner, por la red de Facebook. </p> -->
+                            <a type="button" href="https://cepreuni.net.pe/#/intensivo2" class="btn btn-primary">Saber
+                                más</a>
+                        </div>
                     </div>
-                    <div class="col-12 col-sm-4 mt-2">
+                    <!-- <div class="col-12 col-sm-4 mt-2">
                         <div class="card">
                             <a href="https://cepreuni.net.pe/#/registro" target="_bank">
                                 <img src="assets/img/comunicado/martes.jpeg" class="card-img-top" alt="Conversatorio">
@@ -408,12 +425,12 @@
                             </a>
                            
                         </div>
-                    </div>
+                    </div> -->
                     <!-- <div class="card-body archivos__pre text-center">
                         <a href="https://cepreuni.net.pe/#/registro" target="_bank"
                             class="btn btn-sm">Quiero participar</a>
                     </div> -->
-                    
+
                 </div>
             </div>
             <!-- <div class="modal-footer">

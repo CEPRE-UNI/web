@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import Swal from 'sweetalert2';
 import { InfoPaginaService } from '../../services/info-pagina.service';
 
 @Component({
@@ -38,5 +39,14 @@ export class HomeComponent implements OnInit {
       }
     },
     nav: true
+  }
+
+  alertInscrpcion(){
+    Swal.fire({
+      text: "Este grupo inició el 13 dic. 2021. Sin embargo, el grupo 2 está disponible. ",
+      icon: "info",
+      timer: 5000,
+      timerProgressBar: true
+  });
   }
 }
