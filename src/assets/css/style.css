@@ -2612,3 +2612,26 @@ top: 0;
     font-weight: 900;
     margin: 5px;
 }
+
+
+.cilos__regulares .ciclo__regular__item a{
+	transition: .6s ease-out;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0 10px 10px rgba(0,0,0,0);
+
+}
+.cilos__regulares .ciclo__regular__item a:hover{
+  transform: translateY(15px);
+}
+.cilos__regulares .ciclo__regular__item a:hover:before{
+  opacity: 1;
+}
+/* .cilos__regulares .ciclo__regular__item a:hover .cilos__regulares.mensaje{
+  opacity: 1;
+  transform: translateY(0);
+  position: relative;
+
+} */
+
