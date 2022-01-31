@@ -1,10 +1,10 @@
 {
-    "titulo":"Ciclo Básico Admisión 2022-2",
-    "fecha_incripcionPrueba_desde":"diciembre 2021",
-    "fecha_incripcionPrueba_hasta":"marzo 2022",
-    "fecha_prueba":"En programación: diciembre 2021",
-    "fecha_matricula":"En programación",
-    "fecha_inicio":"En programación",
+    "titulo":"Ciclo Preuniversitario Admisión 2022-2",
+    "fecha_incripcionPrueba_desde":"martes 01 de febrero ",
+    "fecha_incripcionPrueba_hasta":"viernes 11 de marzo",
+    "fecha_prueba":"domingo 13 de marzo",
+    "fecha_matricula":"del lunes 14 al viernes 18 de marzo de 2022",
+    "fecha_inicio":"lunes 21 de marzo de 2022",
     "fecha_confirmacion":"fecha en programación",
     "fecha_correo":"fecha en  programación",
     "manana":"07:30 a 13:45",
@@ -12,5 +12,5 @@
     "costo_incripcionPrueba":"S/. 132,00",
     "costo_matricula":"S/. 176,00",
     "costo_cuota":"S/. 404,80",
-    "link":""
+    "link":"https://cepre.uni.pe/Inscpciones2022.php"
 }
