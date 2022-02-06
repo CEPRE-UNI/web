@@ -1,56 +1,749 @@
 <main id="main">
-    <div class="headeritems"></div>
-    <div class="cabeza"></div>
-        <!-- ======= Breadcrumbs ======= -->
-        <section id="breadcrumbs" class="breadcrumbs">
-          <div class="container">
-            <!-- <ol>
-              <li><a href="/index.html">Inicio</a></li>
-              <li>Bibliografía</li>
-            </ol> -->
-            <h2>Asesorías </h2>
-    
-          </div>
-        </section><!-- End Breadcrumbs -->
-    
-        <!-- ======= Portfolio Details Section ======= -->
-        <section id="portfolio-details" class="portfolio-details">
-          <div class="container">
-            <div class="portfolio-description ">
-              <div class="card" style="max-width: 45%; margin:0 auto;">
-                  <div class="col-md-12">
-                    <img src="assets/img/portada_asesoria.jpg" class="card-img" alt="yoquierosercientifico">
-                  </div>
-                  <!-- <div class="col-md-12"> -->
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="code">código</label>
-                                <input type="text" class="form-control" id="code" placeholder="i201716389">
-                              </div>
-                              <div class="form-group">
-                                <label for="code">DNI</label>
-                                <input type="password" class="form-control" id="password" >
-                              </div>
-                            <div class="form-group">
-                              <label for="exampleFormControlSelect1">Curso</label>
-                              <select class="form-control" id="exampleFormControlSelect1">
-                                <option>Algebra</option>
-                                <option>Humanidades</option>
-                                <option>Trigonometría</option>
-                                <option>Geometría</option>
-                              </select>
-                            </div>
-                            <a href="" target="_blank" class="btn  btn-info"><i class="fas fa-file-download"></i> Registrar</a>
-                        </form>
-                    </div>
-                  <!-- </div> -->
+  <div class="headeritems"></div>
+  <!-- ======= Breadcrumbs ======= -->
+  <div class="cabeza"></div>
+  <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+          <!-- <ol>
+            <li><a routerLink="home" ><i class='bx bxs-home-circle'></i></a></li>
+            <li>Ciclo Preuniversitario Admisión 2021-2</li>
+        </ol> -->
+          <h2 class="ciclo__title">{{_basico.basico.titulo}}</h2>
+          <!-- <p class="mensaje__pruebaselecciom"><i class="icofont-bullhorn"></i> Utiliza correo gmail para inscribirte</p> -->
+          <!---botones descargas --->
+          <div class="row float-center ">
+
+              <div class="">
+                  <a class="btn btn-sm link__inscripcion"  href="{{_basico.basico.link}}" ><i class="icofont-ui-keyboard"></i>
+                  Inscripción a Prueba de Selección</a>
+                
               </div>
-            </div>
-    
-        </div>
-        </section>
-        <!-- End Portfolio Details Section -->
-    
-      </main>
-      <!-- End #main -->
+              <div id="prueba_seleccion" class="btn-group btn-group btn-group-sm modelo__prueba" role="group"
+                  aria-label="Basic example">
+                  <button class="btn ">Modelo Prueba</button>
+                  <a href="assets/descargas/PS--BAS ADM.2019-1.pdf" target="_blank" type="button" class="btn "><i
+                          class="icofont-paper"></i> 2019-1</a>
+                  <a href="assets/descargas/PS--BAS ADM.2019-2.pdf" target="_blank" type="button" class="btn "><i
+                          class="icofont-paper"></i> 2019-2</a>
+
+              </div>
+              <div id="prueba_seleccion" class="btn-group btn-group btn-group-sm archivos__bas" role="group"
+                  aria-label="Basic example">
+                  <a href="assets/descargas/brochure/basico.pdf" target="_blank" type="button" class="btn "><i
+                          class="icofont-list"></i> Brochure</a>
+                  <a href="assets/descargas/silabo/basico.pdf" target="_blank" type="button" class="btn "><i
+                          class="icofont-list"></i> Sílabo</a>
+
+              </div>
+          </div>
+
+
+      </div>
+      <!--- Fin botones descargas --->
+
+  </section><!-- End Breadcrumbs -->
+  <div class="tabs">
+
+      <input type="radio" id="tab1" name="tab-control" checked>
+      <input type="radio" id="tab2" name="tab-control">
+      <input type="radio" id="tab3" name="tab-control">
+      <input type="radio" id="tab4" name="tab-control">
+      <input type="radio" id="tab5" name="tab-control">
+      <ul class="ul">
+          <li class="li" title="Información General"><label for="tab1" role="button"><i
+                      class="icofont-info-circle"></i><br><span>Información General</span></label></li>
+          <li class="li" title="Requerimiento"><label for="tab2" role="button"><i
+                      class="icofont-school-bag"></i><br><span> Requerimientos</span></label></li>
+          <li class="li" title="Ofrecemos"><label for="tab3" role="button"><i
+                      class="icofont-brain-alt"></i><br><span>Ofrecemos</span></label></li>
+          <li class="li" title="Cronograma"><label for="tab4" role="button"><i
+                      class="icofont-ui-calendar"></i><br><span>Cronograma</span></label></li>
+          <li class="li" title="Inscripción"><label for="tab5" role="button"><i
+                      class="icofont-group-students"></i><br><span>Inscripción</span></label></li>
+      </ul>
+
+      <div class="slider">
+          <div class="indicator"></div>
+      </div>
+      <div class="content">
+          <!-- ======= Portfolio Details Section =======  -->
+          <section id="portfolio-details" class="portfolio-details">
+              <!-- <div class="container"> -->
+              <h2 class="movil__title">Información General</h2>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  Para registrarse es necesario que el postulante tenga un correo con extensión <a
+                      href="https://accounts.google.com/SignUp" target="_blank" class="alert-link">Gmail.</a>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="row">
+                  <div class="col-lg-5 col-md-6">
+                      <div class="icon-box">
+                          <a target="_blank" class="logo mr-auto"><img src="assets/img/ciclos/CicloBasicoDetalle.png"
+                                  alt="Ciclo preuniversitario" class="img-fluid"></a>
+                          <!--<div class="card-body">
+                                    <h4 class="title card-title"><a href="http://cepre.uni.pe/Inscripverano.php">Inscripción Intensivo I Virtual</a></h4>
+                                   
+                                  </div>-->
+                      </div>
+                  </div>
+
+                  <div class="col-lg-7 col-md-6">
+                      <div class="card">
+                          <ul class="list-group list-group-flush">
+                              <li class="list-group-item">
+                                  <!---horario --->
+                                  <div class="cicloinfo-fechas">
+                                      <div class="container-fluid">
+                                          <div class="row">
+                                              <div class="col-md-12col-sm-5">
+                                                  <div class="text__pre__import fecha-icon font-weight-bold ">
+                                                      {{_basico.basico.titulo}}
+                                                  </div>
+                                              </div>
+
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--- Fin horario --->
+
+
+                              </li>
+                              <li class="list-group-item">
+                                  <!---horario --->
+                                  <div class="cicloinfo-fechas">
+                                      <div class="container-fluid">
+                                          <div class="row">
+                                              <div class="col-md-5 col-sm-5">
+                                                  <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                          class="far fa-calendar-alt"></i> Inscripción para la
+                                                      Prueba de Selección</div>
+                                              </div>
+                                              <div class="col-md-7 col-sm-7">
+                                                  {{_basico.basico.fecha_incripcionPrueba_desde}} al
+                                                  {{_basico.basico.fecha_incripcionPrueba_hasta}}
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--- Fin horario --->
+                              </li>
+                              <li class="list-group-item">
+                                  <!---horario --->
+                                  <div class="cicloinfo-fechas">
+                                      <div class="container-fluid">
+                                          <div class="row">
+                                              <div class="col-md-5 col-sm-5">
+                                                  <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                          class="far fa-calendar-alt"></i> Prueba de Selección
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-7 col-sm-7 text__pre">
+                                                  {{_basico.basico.fecha_prueba}}
+                                              </div>
+                                              <div class="col-md-5 col-sm-5">
+                                                  <div class="font-weight-bold">
+                                                      Modelo de Prueba
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-7 col-sm-7 text__pre d-flex justify-content-center">
+                                                  <div class="row">
+                                                      <div class="btn-group btn-group btn-group-sm modelo__prueba"
+                                                          role="group" aria-label="Basic example">
+
+                                                          <a href="assets/descargas/PS--BAS ADM.2019-1.pdf" target="_blank" type="button" class="btn "><i
+                                                              class="icofont-paper"></i> 2019-1</a>
+                                                      <a href="assets/descargas/PS--BAS ADM.2019-2.pdf" target="_blank" type="button" class="btn "><i
+                                                              class="icofont-paper"></i> 2019-2</a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--- Fin horario --->
+                              </li>
+                              <li class="list-group-item">
+                                  <!---horario --->
+                                  <div class="cicloinfo-fechas">
+                                      <div class="container-fluid">
+                                          <div class="row">
+                                              <div class="col-md-5 col-sm-5">
+                                                  <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                          class="fas fa-calendar-check"></i> Matrícula</div>
+                                              </div>
+                                              <div class="col-md-7 col-sm-7 text__pre">
+                                                  {{_basico.basico.fecha_matricula}}</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--- Fin horario --->
+
+                              </li>
+                              <li class="list-group-item">
+                                  <!---horario --->
+                                  <div class="cicloinfo-fechas">
+                                      <div class="container-fluid">
+                                          <div class="row">
+                                              <div class="col-md-5 col-sm-5">
+                                                  <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                          class="fas fa-calendar-times"></i> Inicio de clases
+                                                  </div>
+                                              </div>
+                                              <div class="col-md-7 col-sm-7 text__pre">
+                                                  {{_basico.basico.fecha_inicio}}</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--- Fin horario --->
+
+                              </li>
+                              <li class="list-group-item">
+                                  <!---horario --->
+                                  <div class="cicloinfo-fechas">
+                                      <div class="container-fluid">
+                                          <div class="row">
+                                              <div class="col-md-12 col-sm-12">
+                                                  <div
+                                                      class="text__pre__import ciclofecha-tituE fecha-icon font-weight-bold">
+                                                      <i class="far fa-clock"></i>
+                                                      Horario de clases</div>
+                                              </div>
+                                              <div class="col-md-12 col-sm-6 ciclofecha-text text-center">
+                                                  <table class="table table-sm">
+                                                      <thead>
+                                                          <tr>
+                                                              <th scope="col">TURNO</th>
+                                                              <th scope="col">Lun a Vie</th>
+                                                              <th scope="col">Sáb</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <th scope="row">Mañana</th>
+                                                              <td>08:10 a 12:10</td>
+                                                              <td>07:30 a 13:20</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <th scope="row">Tarde</th>
+                                                              <td>16:00 a 20:00</td>
+                                                              <td>14:25 a 20:15</td>
+                                                          </tr>
+
+                                                      </tbody>
+                                                  </table>
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--- Fin horario --->
+
+                              </li>
+                              <li class="list-group-item">
+                                  <!---horario --->
+                                  <div class="cicloinfo-fechas">
+                                      <div class="container-fluid">
+                                          <div class="row">
+                                              <div class="col-md-12 col-sm-12">
+                                                  <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                          class="fas fa-coins"></i>
+                                                      Inversión</div>
+                                              </div>
+                                              <div class="col-md-12 col-sm-6 text__pre">
+                                                  <table class="table table-sm">
+                                                      <thead>
+                                                          <tr>
+                                                              <th scope="col">PROCESO</th>
+                                                              <th scope="col">COSTO</th>
+                                                          </tr>
+                                                      </thead>
+                                                      <tbody>
+                                                          <tr>
+                                                              <th scope="row">Inscripción para la Prueba de
+                                                                  Selección</th>
+                                                              <td> {{_basico.basico.costo_incripcionPrueba}}</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <th scope="row">Matrícula</th>
+                                                              <td>{{_basico.basico.costo_matricula}}</td>
+                                                          </tr>
+                                                          <tr>
+                                                              <th scope="row">Cuota de pensión/mes (5 cuotas)</th>
+                                                              <td>{{_basico.basico.costo_cuota}}</td>
+                                                          </tr>
+
+                                                      </tbody>
+                                                  </table>
+
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--- Fin horario --->
+
+                              </li>
+                              <li class="list-group-item">
+                                  <!---horario --->
+                                  <div class="cicloinfo-fechas">
+                                      <div class="container-fluid ">
+                                          <div class="row">
+                                              <!-- <div class="col-md-5 col-sm-5">
+                                                  <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                          class="fas fa-calendar-check"></i> Modelo Prueba</div>
+                                              </div> -->
+                                              <div
+                                                  class="col-md-12 col-sm-12 text__pre d-flex justify-content-center">
+                                                  <div class="row">
+                                                      <div class="btn-group btn-group btn-group-sm archivos__bas"
+                                                          role="group" aria-label="Basic example">
+                                                          <a href="assets/descargas/brochure/basico.pdf"
+                                                              target="_blank" type="button" class="btn "><i
+                                                                  class="icofont-list"></i> Brochure</a>
+                                                          <a href="assets/descargas/silabo/basico.pdf" target="_blank"
+                                                              type="button" class="btn "><i class="icofont-list"></i>
+                                                              Sílabo</a>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <!--- Fin horario --->
+
+                              </li>
+                          </ul>
+
+                      </div>
+
+                  </div>
+
+              </div>
+              <div class="portfolio-description">
+                  <h2>Descripción</h2>
+                  <p>Este ciclo de preparación te permite adquirir competencias en los temas y contenidos de los
+                      sílabos para los exámenes de la UNI, lo que te brindará mayor probabilidad de éxito en los
+                      exámenes de admisión de las diferentes universidades del Perú. Este ciclo de preparación está
+                      diseñado para que lo lleves en forma virtual y con el acompañamiento de tutores virtuales, así
+                      como de un sistema inteligente con autoevaluaciones formativas.</p>
+                  <h2>Dirigido a</h2>
+                  <p>estudiantes o egresados de secundaria que recién inician su etapa de preparación
+                      preuniversitaria y requieren complementar y ampliar sus conocimiento básicos para adquirir
+                      habilidades, conocimientos y destrezas en la solución de problemas de Matemáticas
+                      (Aritmética, Álgebra, Geometría y Trigonometría), Ciencias (Física y Química) y Aptitud
+                      Académica (Razonamiento Matemático y Razonamiento Verbal). <br>
+                      Este ciclo de preparación es formativo y no ofrece vacantes para ingreso directo a la UNI.
+                  </p>
+                  <h2>Prueba de seleccción</h2>
+                  <p>Requisito indispensable para ingresar a CEPRE-UNI. La prueba está diseñada para evaluar
+                      conceptos previos, básicos y generales de los cursos de Física, Química Aritmética, Álgebra,
+                      Geometría, Trigonometría y Aptitud Académica (Razonamiento Verbal y Razonamiento
+                      Matemático). <br>El examen es virtual, consta de 32 preguntas y dura 2 horas.</p>
+              </div>
+              <h2>Cursos </h2>
+              <div class="badge " style="width: 12rem;">
+                  <li>ÁLGEBRA</li>
+              </div>
+              <div class="badge " style="width: 12rem;">
+                  <li>ARITMÉTICA</li>
+              </div>
+              <div class="badge " style="width: 12rem;">
+                  <li>FÍSICA </li>
+              </div>
+              <div class="badge " style="width: 12rem;">
+                  <li> GEOMETRÍA</li>
+              </div>
+              <div class="badge " style="width: 12rem;">
+                  <li>QUÍMICA</li>
+              </div>
+              <div class="badge " style="width: 12rem;">
+                  <li>TRIGONOMETRÍA</li>
+              </div>
+              <div class="badge " style="width: 12rem;">
+                  <li>HUMANIDADES</li>
+              </div>
+              <div class="badge " style="width: 15rem;">
+                  <li>RAZONAMIENTO MATEMÁTICO</li>
+              </div>
+              <div class="badge " style="width: 15rem;">
+                  <li>RAZONAMIENTO VERBAL</li>
+              </div>
+              <!-- </div> -->
+          </section>
+          <section id="portfolio-details" class="portfolio-details">
+              <h2 class="movil__title">Requerimientos</h2>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  Para registrarse en la Prueba de Selección es necesario que el postulante tenga un correo con extensión <a
+                      href="https://accounts.google.com/SignUp" target="_blank" class="alert-link">Gmail.</a>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="col-lg-12 col-md-12 ">
+                  <p class="text-center">Estos requerimientos son <strong>obligatorios</strong> para rendir las
+                      evaluaciones con
+                      el sistema de
+                      videovigilancia.</p>
+                  <div class="card">
+                      <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                              <!---horario --->
+                              <div class="cicloinfo-fechas">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-md-5 col-sm-5">
+                                              <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                      class="fas fa-envelope-open"></i>
+                                                  GMAIL</div>
+                                          </div>
+                                          <div class="col-md-7 col-sm-7 text__pre">DATOS COMPLETOS Y FIDEDIGNOS CON UNA FOTO ACTUAL</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--- Fin horario --->
+                          </li>
+                          <li class="list-group-item">
+                              <!---horario --->
+                              <div class="cicloinfo-fechas">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-md-5 col-sm-5">
+                                              <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                      class="fab fa-whatsapp"></i>
+                                                  WhatsApp</div>
+                                          </div>
+                                          <div class="col-md-7 col-sm-7 text__pre">Personal</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--- Fin horario --->
+                          </li>
+                          <li class="list-group-item">
+                              <!---horario --->
+                              <div class="cicloinfo-fechas">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-md-5 col-sm-5">
+                                              <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                      class="fas fa-wifi"></i>
+                                                  internet</div>
+                                          </div>
+                                          <div class="col-md-7 col-sm-7 text__pre">de alta velocidad</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--- Fin horario --->
+                          </li>
+
+                          <li class="list-group-item">
+                              <!---horario --->
+                              <div class="cicloinfo-fechas">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-md-5 col-sm-5">
+                                              <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                      class="fas fa-camera-retro"></i> cámara web</div>
+                                          </div>
+                                          <div class="col-md-7 col-sm-7 text__pre">720p recomendable</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--- Fin horario --->
+                          </li>
+
+                          <li class="list-group-item">
+                              <!---horario --->
+                              <div class="cicloinfo-fechas">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-md-5 col-sm-5">
+                                              <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                      class="fab fa-chrome"></i>
+                                                  navegador web</div>
+                                          </div>
+                                          <div class="col-md-7 col-sm-7 text__pre">Google Chrome</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--- Fin horario --->
+                          </li>
+                          <li class="list-group-item">
+                              <!---horario --->
+                              <div class="cicloinfo-fechas">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-md-5 col-sm-5">
+                                              <div class="text__pre__import fecha-icon font-weight-bold"> <i
+                                                      class="fas fa-mobile-alt"></i>
+                                                  celular</div>
+                                          </div>
+                                          <div class="col-md-7 col-sm-7 text__pre">de gama media</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--- Fin horario --->
+                          </li>
+
+                          <li class="list-group-item">
+                              <!---horario --->
+                              <div class="cicloinfo-fechas">
+                                  <div class="container-fluid">
+                                      <div class="row">
+                                          <div class="col-md-5 col-sm-5">
+                                              <div class="text__pre__import fecha-icon font-weight-bold"><i
+                                                      class="fas fa-laptop"></i>
+                                                  laptop o pc</div>
+                                          </div>
+                                          <div class="col-md-7 col-sm-7 text__pre"> 4gb de memoria RAM como
+                                              mínimo</div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <!--- Fin horario --->
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </section>
+          <section id="portfolio-details" class="portfolio-details">
+              <h2 class="movil__title">Ofrecemos</h2>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  Para registrarse en la Prueba de Selección es necesario que el postulante tenga un correo con extensión <a
+                      href="https://accounts.google.com/SignUp" target="_blank" class="alert-link">Gmail.</a>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div>
+                  <ul>
+                      <li>Una plataforma virtual robusta e intuitiva</li>
+                      <li>Exámenes virtuales: simulacros de exámenes tipo CEPRE-UNI</li>
+                      <li>Enseñanza virtual diseñada para el aprendizaje autónomo, y retroalimentado mediante
+                          autoevaluaciones
+                          asíncronas</li>
+                      <li>Catedráticos de la UNI y plana docente conformada por doctores, magísteres y profesionales
+                          titulados con amplia experiencia en la educación formativa preuniversitaria </li>
+                  </ul>
+              </div>
+          </section>
+          <section id="portfolio-details" class="portfolio-details">
+              <h2 class="movil__title">Cronograma</h2>
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  Para registrarse en la Prueba de Selección es necesario que el postulante tenga un correo con extensión <a
+                      href="https://accounts.google.com/SignUp" target="_blank" class="alert-link">Gmail.</a>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <table class="table table-striped table-sm pre__table">
+                  <thead>
+                      <tr>
+                          <th scope="col">Evento</th>
+                          <th scope="col">Fecha</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th scope="row">Inscripción para la Prueba de Selección</th>
+                          <td> {{_basico.basico.fecha_incripcionPrueba_desde}} a
+                              {{_basico.basico.fecha_incripcionPrueba_hasta}}</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Prueba de Selección</th>
+                          <td> {{_basico.basico.fecha_prueba}} </td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Matrícula</th>
+                          <td> {{_basico.basico.fecha_matricula}} </td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Inicio de clases</th>
+                          <td> {{_basico.basico.fecha_inicio}} </td>
+                      </tr>
+                      <!-- <tr>
+                          <th scope="row">Primera Práctica Calificada</th>
+                         
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Segunda Práctica Calificada</th>
+                          
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Primer Examen Parcial</th>
+                          
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Tercera Práctica Calificada</th>
+                         
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Cuarta Práctica Calificada</th>
+                         
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Segundo Examen Parcial</th>
+                         
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Quinta Práctica Calificada</th>
+                          
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Sexta Práctica Calificada</th>
+                         
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Séptima Práctica Calificada</th>
+                         
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Examen Final</th>
+                         
+                          <td>---</td>
+                      </tr>
+                      <tr>
+                          <th scope="row">Prueba de Aptitud Vocacional</th>
+                         
+                      </tr> -->
+
+
+                  </tbody>
+              </table>
+          </section>
+          <section id="portfolio-details" class="portfolio-details">
+              <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  Para registrarse en la Prueba de Selección es necesario que el postulante tenga un correo con extensión <a
+                      href="https://accounts.google.com/SignUp" target="_blank" class="alert-link">Gmail.</a>
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <h2 class="movil__title">Inscripción</h2>
+              <div class="timeline">
+                  <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                      <div class="timeline__event__icon ">
+                          <i class="icofont-ui-keyboard"></i>
+
+                      </div>
+                      <div class="timeline__event__date">
+                          1 <sup>ro</sup>
+                      </div>
+                      <div class="timeline__event__content ">
+                          <div class="timeline__event__title">
+                              Creación de la cuenta Gmail
+                          </div>
+                          <div class="timeline__event__description">
+
+                              <!-- <p><small class="text-muted"><i class="far fa-edit"></i>Hasta el lunes 15 de
+                              marzo</small></p> -->
+                              <p> Será tu correo oficial para inscribirte en CEPREUNI (es de extensión <a target="_bank"
+                                      href="https://accounts.google.com/SignUp" class="btn btn-sm">Gmail</a>). Por
+                                  ningún motivo se aceptará un correo distinto. Los datos y la fotografía tienen que corresponder al estudiante. Prohibido usar otro tipo de imagen.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                      <div class="timeline__event__icon">
+                          <i class="icofont-coins"></i>
+                      </div>
+                      <div class="timeline__event__date">
+                          2 <sup>do</sup>
+                      </div>
+                      <div class="timeline__event__content">
+                          <div class="timeline__event__title">
+                              Registro para la Prueba de Selección
+                          </div>
+                          <div class="timeline__event__description">
+                              <p> Para que puedas estudiar en CEPREUNI, es necesario que rindas la Prueba de
+                                  Selección. Por eso debes registrar tus datos en el siguiente <a
+                                      href="{{_basico.basico.link}}" class="btn btn-sm">LINK</a>.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                      <div class="timeline__event__icon">
+                          <i class="icofont-email"></i>
+                      </div>
+                      <div class="timeline__event__date">
+                          3<sup>ro</sup>
+                      </div>
+                      <div class="timeline__event__content">
+                          <div class="timeline__event__title">
+                              Conformidad del registro a la Prueba de Selección
+                          </div>
+                          <div class="timeline__event__description">
+
+                              <div class="timeline-body">
+                                  <p>
+                                      Una vez terminado tu registro, se genera un archivo con los pasos que debes
+                                      seguir para <strong>pagar tu derecho a la Prueba de Selección
+                                          {{_basico.basico.costo_incripcionPrueba}}</strong>. En la hoja también se te
+                                      indicará después de cuánto tiempo debes realizar el siguiente paso.
+                                  </p>
+                              </div>
+                          </div>
+
+                      </div>
+                  </div>
+                  <div class="timeline__event animated fadeInUp timeline__event--type1">
+                      <div class="timeline__event__icon">
+                          <i class="icofont-id-card"></i>
+                      </div>
+                      <div class="timeline__event__date">
+                          4<sup>to</sup>
+                      </div>
+                      <div class="timeline__event__content">
+                          <div class="timeline__event__title">
+                              Prueba de Selección
+                          </div>
+                          <div class="timeline__event__description">
+                              <p>
+                                  Cumplido el plazo indicado en el punto anterior, ingresa al siguiente <a
+                                      href="{{_basico.basico.link}}" class="btn btn-sm">LINK</a> para que adjuntes una foto
+                                  y DNI. Con esto se generará tu ficha de Inscripción (autorización para rendir la
+                                  Prueba de Selección).
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="timeline__event  animated fadeInUp delay-2s timeline__event--type2">
+                      <div class="timeline__event__icon ">
+                          <i class="icofont-ui-keyboard"></i>
+
+                      </div>
+                      <div class="timeline__event__date">
+                          5 <sup>to</sup>
+                      </div>
+                      <div class="timeline__event__content ">
+                          <div class="timeline__event__title">
+                              La Ficha de Inscripción
+                          </div>
+                          <div class="timeline__event__description">
+                              <p>
+                                  Es el documento oficial que te autoriza a participar en el examen. Contiene las claves y accesos de entrada que necesitarás. Si presentas algún inconveniente, puedes llamar a Soporte Técnico CEPRE UNI:
+                              </p>
+                              <ul>
+                                  <li>Bryan Carcasi: 987 470 774</li>
+                                  <li>Dionicio Fabian: 999 228 041</li>
+                                  <li>Lenin Ñahue: 944 364 211</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </div>
+  </div>
+
+
+</main><!-- End #main -->

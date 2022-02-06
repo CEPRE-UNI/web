@@ -61,11 +61,34 @@ export class HomeComponent implements OnInit {
   }
 
   alertInscrpcion() {
-    Swal.fire({
-      text: "El grupo 1 inició el 13 dic. 2021. Sin embargo, el grupo 2 está disponible. ",
-      icon: "info",
-      timer: 5000,
-      timerProgressBar: true
-    });
+    // Swal.fire({
+    //   text: "El grupo 1 inició el 13 dic. 2021. Sin embargo, el grupo 2 está disponible. ",
+    //   icon: "info",
+    //   timer: 5000,
+    //   timerProgressBar: true
+    // });
+  }
+  
+  agendaCiclo(ciclo: string) {
+    if (ciclo==="pre"){
+      Swal.fire({
+        // title: 'Sweet!',
+        // text: 'Modal with a custom image.',
+        imageUrl: 'assets/img/agenda/pre.jpg',
+        // imageWidth: 400,
+        // imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+    }else{
+      Swal.fire({
+        // title: 'Sweet!',
+        // text: 'Modal with a custom image.',
+        imageUrl: 'assets/img/agenda/basico.jpg',
+        // imageWidth: 400,
+        // imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+    }
+    
   }
 }

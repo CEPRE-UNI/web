@@ -137,7 +137,7 @@
                             <h2 class="text-center">Información importante</h2>
                             <div class="d-flex justify-content-center ">
                                 <div class="btn-group btn-group-sm " role="group" aria-label="Basic example">
-                                    <a href="assets/descargas/directivasPre.pdf" target="_blank" type="button"
+                                    <a  (click)="agendaCiclo('pre')"  target="_blank" type="button"
                                         class="btn "><i class="fas fa-calendar-times Pre_insc_01"></i> Agenda</a>
                                     <a href="assets/descargas/silabo/pre.pdf" target="_blank"
                                         type="button" class="btn "><i class="fas fa-graduation-cap"></i> Sílabo</a>
@@ -178,10 +178,10 @@
                             <h1 class="text-center pre">CICLO </h1>
                             <h1 class="text-center pre"> BÁSICO</h1>
                             <h1 class="text-center pre">2022-2</h1>
-                            <h2 class="text-center">Resultados de la Prueba de Selección</h2>
+                            <h2 class="text-center">Información importante</h2>
                             <div class="d-flex justify-content-center ">
                                 <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                                    <a href="assets/descargas/directivasBasico.pdf" target="_blank" type="button"
+                                    <a  (click)="agendaCiclo('basico')"  target="_blank" type="button"
                                         class="btn "><i class="fas fa-calendar-times"></i> Agenda</a>
                                     <a href="assets/descargas/silabo/basico.pdf" target="_blank"
                                         type="button" class="btn "><i class="fas fa-graduation-cap"></i> Sílabo</a>
@@ -438,7 +438,7 @@
                         <div class="card">
                             <!-- <a href="https://cepreuni.net.pe/#/registro" target="_bank">
                             </a> -->
-                            <img src="assets/img/comunicado/pre.jpeg" class="card-img-top" alt="Conversatorio">
+                           <a target="_bank" routerLink="/pre"> <img src="assets/img/comunicado/pre.jpeg" class="card-img-top" alt="Conversatorio"></a>
                         </div>
                         <div class="modal-footer">
                             <!-- <a type="button" href="https://cepreuni.net.pe/#/registro" class="btn btn-primary">Inscribirse</a> -->
@@ -446,9 +446,9 @@
                     </div>
                     <div class="col-12 col-sm-6 mt-2">
                         <div class="card">
-                            <!-- <a href="https://cepreuni.net.pe/#/registro" target="_bank"> -->
+                            <a routerLink="/basico" target="_bank">
                             <img src="assets/img/comunicado/basico.jpeg" class="card-img-top" alt="Conversatorio">
-                            <!-- </a> -->
+                            </a>
 
                         </div>
                         <div class="modal-footer">

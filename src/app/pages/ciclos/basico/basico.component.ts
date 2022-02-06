@@ -8,16 +8,32 @@ import { InfoPaginaService } from '../../../services/info-pagina.service';
 })
 export class BasicoComponent implements OnInit {
 
-  constructor(public _basico:InfoPaginaService) { }
+  constructor(public _basico: InfoPaginaService) { }
 
   ngOnInit(): void {
   }
-  alertInscrpcion(){
-    Swal.fire({
-      text: "Se que estas entusiasmado, las inscripciones a la Prueba de Selección es el jueves 15 de julio",
-      icon: "info",
-      timer: 5000,
-      timerProgressBar: true
-  });
+  alertInscrpcion(ciclo: string) {
+    if (ciclo === "pre") {
+      Swal.fire({
+        // title: 'Sweet!',
+        // text: 'Modal with a custom image.',
+        imageUrl: 'assets/img/agenda/pre.png',
+        // imageWidth: 400,
+        // imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+    } else {
+      Swal.fire({
+        // title: 'Sweet!',
+        // text: 'Modal with a custom image.',
+        imageUrl: 'assets/img/agenda/basico.png',
+        // imageWidth: 400,
+        // imageHeight: 200,
+        imageAlt: 'Custom image',
+      })
+    }
+
+
+
   }
 }
