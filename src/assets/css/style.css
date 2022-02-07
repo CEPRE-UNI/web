@@ -707,7 +707,44 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1rem;
 }
 
+
 /*Fin intensivo*/
+/*asesorías*/
+
+.asesoria a:nth-child(2n+1){
+  color:var(--white-color);
+  background: var(--asesorias-color);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.asesoria a:nth-child(2n+1):hover{
+  color:var(--asesorias-color);
+  background: var(--asesorias-color-hover);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.asesoria a:nth-child(2){
+  color: var(--asesorias-color);
+  background: #ffff;
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.asesoria a:nth-child(2):hover{
+  color: var(--asesorias-color);
+  background:var(--asesorias-color-hover);
+  /* border: 2px solid #ffffff; */
+  font-size: 1rem;
+}
+.asesoria a.sabermas:last-child{
+  color: #ffff;
+  background: var(--principal-amarillo);
+  /* border: 2px solid var(--principal-amarillo); */
+  font-size: 1rem;
+  font-weight: 600;
+}
+/*Fin asesorías*/
+
+
 .modelo__prueba a{
   /* font-size: 10rem; */
   background-color: var(--celeste-color-fodo);
