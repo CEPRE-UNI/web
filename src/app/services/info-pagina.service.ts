@@ -15,11 +15,13 @@ export class InfoPaginaService {
   intensivo: infoPaginaPre = {};
   intensivo1: infoPaginaPre = {};
   intensivo2: infoPaginaPre = {};
+  asesoria: infoPaginaPre = {};
   cargada = false;
   cargada_pre = false;
   cargada_basico = false;
   cargada_escolar = false;
   cargada_intensivo = false;
+  cargada_asesoria = false;
   constructor(private hhtp: HttpClient) {
     this.cargarEventos();
     this.cargarPre();
@@ -30,6 +32,7 @@ export class InfoPaginaService {
     this.cargarIntensivo();
     this.cargarIntensivo1();
     this.cargarIntensivo2();
+    this.cargarAsesoria();
 
   }
 
@@ -85,6 +88,12 @@ export class InfoPaginaService {
     this.hhtp.get('assets/data/data-intensivo.json').subscribe((resp:infoPaginaPre) =>{
      this.cargada_intensivo=true
      this.intensivo=resp;
+   })
+  }
+  private cargarAsesoria(){
+    this.hhtp.get('assets/data/data-asesoria.json').subscribe((resp:infoPaginaPre) =>{
+     this.cargada_asesoria=true
+     this.asesoria=resp;
    })
   }
 }

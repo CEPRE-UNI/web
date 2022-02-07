@@ -6,6 +6,7 @@
   --escolar-color: #555AC0;
   --escolar-color-hover: #34387a;
   --asesorias-color: #17ABDE;
+  --asesorias-color-hover: #AEE1F2;
   --intensivo-color: #e45f33ec;
   --intensivo-color-hover: #e45f33ec;
   --intensivo-color-impar: #f8ccbe;
@@ -762,6 +763,22 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--verde-color-text);
   /* border: 2px solid var(--principal-amarillo); */
   color: var(--verde-color-fondo); 
+  font-weight: 600;
+}
+
+.archivos__asesoria a{
+  /* font-size: 10rem; */
+  margin-left: .4rem;
+  background-color: var(--asesorias-color);
+  /* border: 2px solid var(--pre-color-alt); */
+  color: var(--asesorias-color-hover); 
+  font-weight: 600;
+}
+.archivos__asesoria a:hover{
+  /* font-size: 10rem; */
+  background-color: var(--asesorias-color-hover);
+  /* border: 2px solid var(--principal-amarillo); */
+  color: var(--asesorias-color); 
   font-weight: 600;
 }
 
