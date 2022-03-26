@@ -22,7 +22,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    let date = new Date("December 30, 2021 23:59:59");
+    let date = new Date("march 25, 2022 23:59:59");
     countdown(date, (ts) => {
       this.time = ts;
     }, countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS);

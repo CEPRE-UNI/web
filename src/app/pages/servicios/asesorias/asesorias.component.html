@@ -9,15 +9,16 @@
             <li>Ciclo Preuniversitario Admisión 2021-2</li>
         </ol> -->
       <h2 class="ciclo__title">{{_asesoria.asesoria.titulo}}</h2>
-      <!-- <p class="mensaje__pruebaselecciom"><i class="icofont-bullhorn"></i> Utiliza correo gmail para inscribirte</p> -->
+      <p class="mensaje__pruebaselecciom"><i class="icofont-bullhorn"></i> La inscripción compromete a la separación de
+        la matrícula </p>
       <!---botones descargas --->
       <div class="row float-center ">
 
-        <!-- <div class="">
+        <div class="">
           <a class="btn btn-sm link__inscripcion" href="{{_asesoria.asesoria.link}}"><i class="icofont-ui-keyboard"></i>
-            Inscripción</a>
+            Preinscripción</a>
 
-        </div> -->
+        </div>
         <!-- <div id="prueba_seleccion" class="btn-group btn-group btn-group-sm modelo__prueba" role="group"
                   aria-label="Basic example">
                   <button class="btn ">Modelo Prueba</button>
@@ -78,7 +79,7 @@
           </button>
         </div>
         <div class="alert alert-warning" role="alert">
-          <i class="fas fa-address-card"></i> Contar con el carné de vacunas 
+          <i class="fas fa-address-card"></i> Contar con el carnet de vacunación
         </div>
         <div class="row">
           <div class="col-lg-5 col-md-6">
@@ -120,7 +121,7 @@
                       <div class="row">
                         <div class="col-md-5 col-sm-5">
                           <div class="text__pre__import fecha-icon font-weight-bold"><i class="far fa-calendar-alt"></i>
-                            Inscripción</div>
+                            Preinscripción</div>
                         </div>
                         <div class="col-md-7 col-sm-7">
                           {{_asesoria.asesoria.fecha_incripcionPrueba_desde}}
@@ -208,7 +209,7 @@
                           </div>
                         </div>
                         <div class="col-md-7 col-sm-7 text__pre">
-                          <strong>20 alumnos por aula</strong>
+                          <strong>25 alumnos por aula</strong>
                         </div>
                       </div>
                     </div>
@@ -241,16 +242,16 @@
                             <tbody>
                               <tr>
                                 <th scope="row">Mañana</th>
-                                <td>08:00 a 11:20</td>
+                                <td>{{_asesoria.asesoria.manana}}</td>
                               </tr>
                               <tr>
                                 <th scope="row">Tarde</th>
-                                <td>16:00 a 19:20</td>
+                                <td>{{_asesoria.asesoria.tarde}}</td>
                               </tr>
 
                             </tbody>
                           </table>
-                          <p><strong>Grupo 2</strong></p>
+                          <!-- <p><strong>Grupo 2</strong></p>
                           <table class="table table-sm">
                             <thead>
                               <tr>
@@ -261,15 +262,15 @@
                             <tbody>
                               <tr>
                                 <th scope="row">Mañana</th>
-                                <td>08:00 a 11:20</td>
+                                <td>{{_asesoria.asesoria.manana}}</td>
                               </tr>
                               <tr>
                                 <th scope="row">Tarde</th>
-                                <td>16:00 a 19:20</td>
+                                <td>{{_asesoria.asesoria.tarde}}</td>
                               </tr>
 
                             </tbody>
-                          </table>
+                          </table> -->
                         </div>
                       </div>
                     </div>
@@ -308,6 +309,59 @@
                                                               <td>{{_asesoria.asesoria.costo_cuota}}</td>
                                                           </tr> -->
 
+                            </tbody>
+                          </table>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--- Fin horario --->
+
+                </li>
+                <li class="list-group-item">
+                  <!---horario --->
+                  <div class="cicloinfo-fechas">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12">
+                          <div class="text__pre__import fecha-icon font-weight-bold"><i class="fas fa-school"></i>
+                            Sedes</div>
+                        </div>
+                        <div class="col-md-12 col-sm-6 text__pre">
+                          <table class="table table-sm">
+                            <thead>
+                              <tr>
+                                <th scope="col">Lugar</th>
+                                <th scope="col">Turno</th>
+                                <th scope="col">Capacidad</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row">UNI-Sector T</th>
+                                <td>mañana</td>
+                                <td>75</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>tarde</td>
+                                <td>250</td>
+                              </tr>
+                              <tr>
+                                <th scope="row">Javier Prado</th>
+                                <td>mañana</td>
+                                <td>50</td>
+                              </tr>
+                              <tr>
+                                <th scope="row"></th>
+                                <td>tarde</td>
+                                <td>25</td>
+                              </tr>
+                              <tr>
+                                <th colspan="2" class="text-center">Total</th>
+                                <th >400</th>
+                              </tr>
                             </tbody>
                           </table>
 
@@ -437,7 +491,7 @@
             <li>apertura limitada de salones presenciales (solo para estudiantes matriculados
               en el ciclo Preuniversitario 2022-2 en los locales de Javier Prado y de la
               UNI),</li>
-            <li>aforo limitado de 20 alumnos por aula,</li>
+            <li>aforo limitado de 25 alumnos por aula,</li>
             <li>turnos: mañana (8h00 hasta 11h20) y
               tarde (16h00 hasta 19h20),</li>
             <li>clases interdiarias (tres horas cada una),</li>
@@ -490,7 +544,7 @@
           </thead>
           <tbody>
             <tr>
-              <th scope="row">Inscripción</th>
+              <th scope="row">Preinscripción</th>
               <td> {{_asesoria.asesoria.fecha_incripcionPrueba_desde}}
                 <!-- a
                 {{_asesoria.asesoria.fecha_incripcionPrueba_hasta}}</td> -->
@@ -574,8 +628,50 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-        <h2 class="movil__title">Inscripción</h2>
-        <h2>Esta sección se está construyendo</h2>
+        <h2 class="movil__title">Preinscripción</h2>
+        <div class="timeline">
+        
+          <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+              <div class="timeline__event__icon">
+                  <i class="icofont-coins"></i>
+              </div>
+              <div class="timeline__event__date">
+                  1 <sup>ero</sup>
+              </div>
+              <div class="timeline__event__content">
+                  <div class="timeline__event__title">
+                      Preinscripción 
+                  </div>
+                  <div class="timeline__event__description">
+                      <p>Tienes que registrarse en el siguiente <a
+                              href="{{_asesoria.asesoria.link}}" class="btn btn-sm">LINK</a>.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+              <div class="timeline__event__icon">
+                  <i class="icofont-email"></i>
+              </div>
+              <div class="timeline__event__date">
+                  2<sup>do</sup>
+              </div>
+              <div class="timeline__event__content">
+                  <div class="timeline__event__title">
+                      Realizar pago
+                  </div>
+                  <div class="timeline__event__description">
+
+                      <div class="timeline-body">
+                          <p>
+                              Tienes que seguir las indicaciones que se muestra al finalizar la preinscripción.
+                          </p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+         
+      </div>
       </section>
     </div>
   </div>

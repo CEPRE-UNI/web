@@ -137,17 +137,25 @@
                             <h1 class="text-center pre">ASESORÍAS</h1>
                             <h1 class="text-center pre">PRESENCIALES</h1>
                             <h1 class="text-center pre">2022-2</h1>
-                            <h2 class="text-center">Información importante</h2>
-                            <div class="d-flex justify-content-center ">
-                                <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
-                                    <!-- <a  (click)="agendaCiclo('basico')"  target="_blank" type="button"
-                                        class="btn "><i class="fas fa-calendar-times"></i> Agenda</a> -->
-                                    <!-- <a href="assets/descargas/silabo/asesoria.pdf" target="_blank"
-                                        type="button" class="btn "><i class="fas fa-graduation-cap"></i> Sílabo</a> -->
-                                    <a href="assets/descargas/brochure/brochure-asesoria.pdf" target="_blank"
-                                        type="button" class="btn "> <i class="fas fa-file-download"></i> Brochure</a>
+                            <h2 class="text-center">Solo 400 vacantes, la preinscripción finaliza en</h2>
+                            <nav class="navbar-h mb-4">
+                                <div class="navbar-h-content">
+                                    <ul class="utility">
+                                        <li>
+                                            <span> {{time.days}} D</span>
+                                        </li>
+                                        <li>
+                                            <span>{{time.hours}} H</span>
+                                        </li>
+                                        <li>
+                                            <span>{{time.minutes}} M</span>
+                                        </li>
+                                        <li>
+                                            <span>{{time.seconds}} S</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                            </div>
+                            </nav>
                             <div class=" justify-content-center ">
                                 <br>
                                 <div class="d-flex  justify-content-center ">
@@ -177,8 +185,9 @@
                                 <div class="btn-group btn-group-sm " role="group" aria-label="Basic example">
                                     <!-- <a (click)="agendaCiclo('pre')" target="_blank" type="button" class="btn "><i
                                             class="fas fa-calendar-times Pre_insc_01"></i> Agenda</a> -->
-                                    <a href="http://cepre.uni.pe/resultados_psel_adm20222.htm" target="_blank" type="button"
-                                        class="btn "><i class="fas fa-graduation-cap"></i> Ver resultados</a>
+                                    <a href="http://cepre.uni.pe/resultados_psel_adm20222.htm" target="_blank"
+                                        type="button" class="btn "><i class="fas fa-graduation-cap"></i> Ver
+                                        resultados</a>
                                     <!-- <a href="assets/descargas/brochure/pre.pdf" target="_blank" type="button"
                                         class="btn "> <i class="fas fa-file-download"></i> Brochure</a> -->
                                 </div>
@@ -221,8 +230,9 @@
                                 <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
                                     <!-- <a (click)="agendaCiclo('basico')" target="_blank" type="button" class="btn "><i
                                             class="fas fa-calendar-times"></i> Agenda</a> -->
-                                            <a href="http://cepre.uni.pe/resultados_psel_adm20222.htm" target="_blank" type="button"
-                                            class="btn "><i class="fas fa-graduation-cap"></i> Ver resultados</a>
+                                    <a href="http://cepre.uni.pe/resultados_psel_adm20222.htm" target="_blank"
+                                        type="button" class="btn "><i class="fas fa-graduation-cap"></i> Ver
+                                        resultados</a>
                                     <!-- <a href="assets/descargas/brochure/basico.pdf" target="_blank" type="button"
                                         class="btn "> <i class="fas fa-file-download"></i> Brochure</a> -->
                                 </div>
@@ -245,7 +255,7 @@
                     </div>
                 </div>
             </div>
-            
+
 
 
 
@@ -306,8 +316,8 @@
                 <div class="col-lg-3 col-md-6 mt-4 mt-md-0" data-aos="fade-left">
                     <div class="icon-box">
                         <div class="ciclo__regular__item">
-                            <a class="logo mr-auto card__ciclo"><img src="assets/img/ciclos/CicloPre.png" alt="" style="filter: grayscale(1);"
-                                    class="img-fluid"></a>
+                            <a class="logo mr-auto card__ciclo"><img src="assets/img/ciclos/CicloPre.png" alt=""
+                                    style="filter: grayscale(1);" class="img-fluid"></a>
                         </div>
                         <div class="card-body">
                             <h4 class="title card-title"><a>Ciclo Preuniversitario</a></h4>
@@ -328,8 +338,8 @@
                 <div class="col-lg-3 col-md-6 mt-4 mt-lg-0 " data-aos="fade-right">
                     <div class="icon-box">
                         <div class="ciclo__regular__item">
-                            <a class="logo mr-auto card__ciclo"><img src="assets/img/ciclos/CicloBasico.png" alt="" style="filter: grayscale(1);"
-                                    class="img-fluid"></a>
+                            <a class="logo mr-auto card__ciclo"><img src="assets/img/ciclos/CicloBasico.png" alt=""
+                                    style="filter: grayscale(1);" class="img-fluid"></a>
                         </div>
                         <div class="card-body">
                             <h4 class="title card-title"><a>Ciclo Básico</a></h4>
@@ -469,36 +479,25 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 col-sm-12 mt-2 ">
                         <div class="card">
-                            <!-- <a href="https://cepreuni.net.pe/#/registro" target="_bank">
-                            </a> -->
-                            <a target="_bank" >
-                                <img src="assets/img/comunicado/matricula.jpeg" class="card-img-top" alt="Asesorías"></a>
+                            <a target="_bank" routerLink="asesorias"  href="http://cepre.uni.pe/resultados_psel_adm20222.htm">
+                                <img src="assets/img/ciclos/Asesoria.png" alt=""class="card-img-top" alt="Asesorías">
+                            </a>
                         </div>
                         <div class="modal-footer">
-                            <!-- <a type="button" href="https://cepreuni.net.pe/#/registro" class="btn btn-primary">Inscribirse</a> -->
+                            <a type="button" target="_bank" routerLink="asesorias" class="btn btn-primary">Saber más</a>
                         </div>
                     </div>
-                    <!-- <div class="col-12 col-sm-6 mt-2">
+                    <!-- <div class="col-12 col-sm-6 mt-2 ">
                         <div class="card">
                             <a target="_bank" href="https://zoom.us/j/98415958369?pwd=VG51RkE4QVZkemhaNFZTV2x5NlBqdz09">
-                                <img src="assets/img/comunicado/miercoles.jpeg" class="card-img-top" alt="Asesorías"></a>
+                                <img src="assets/img/comunicado/cronograma.jpeg" class="card-img-top" alt="Asesorías">
+                            </a>
                         </div>
                         <div class="modal-footer">
-
+                            <a type="button" href="https://zoom.us/j/98415958369?pwd=VG51RkE4QVZkemhaNFZTV2x5NlBqdz09" class="btn btn-primary">Ir a la reunión</a>
                         </div>
                     </div> -->
-                    <!-- <div class="col-12 col-sm-4 mt-2">
-                        <div class="card">
-                            <a href="https://cepreuni.net.pe/#/registro" target="_bank">
-                                <img src="assets/img/comunicado/jueves.jpeg" class="card-img-top" alt="Conversatorio">
-                            </a>
-                           
-                        </div>
-                    </div> -->
-                    <!-- <div class="card-body archivos__pre text-center">
-                        <a href="https://cepreuni.net.pe/#/registro" target="_bank"
-                            class="btn btn-sm">Quiero participar</a>
-                    </div> -->
+                  
 
                 </div>
             </div>
