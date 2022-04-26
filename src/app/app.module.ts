@@ -31,6 +31,7 @@ import { Grupo02Component } from './pages/ciclos/intensivo/grupo02/grupo02.compo
 import { ResgistroComponent } from './pages/eventos/resgistro/resgistro.component';
 import { ConfirmacionComponent } from './pages/eventos/confirmacion/confirmacion.component';
 import { AsesoriasComponent } from './pages/servicios/asesorias/asesorias.component';
+import { PsicolComponent } from './servicios/psicol/psicol.component';
 
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { AsesoriasComponent } from './pages/servicios/asesorias/asesorias.compon
     ResgistroComponent,
     ConfirmacionComponent,
     AsesoriasComponent,
+    PsicolComponent,
     
   ],
   imports: [

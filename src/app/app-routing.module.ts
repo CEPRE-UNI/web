@@ -27,6 +27,7 @@ import { Grupo02Component } from './pages/ciclos/intensivo/grupo02/grupo02.compo
 import { ResgistroComponent } from './pages/eventos/resgistro/resgistro.component';
 import { ConfirmacionComponent } from './pages/eventos/confirmacion/confirmacion.component';
 import { AsesoriasComponent } from './pages/servicios/asesorias/asesorias.component';
+import { PsicolComponent } from './servicios/psicol/psicol.component';
 
 const app_routes:Routes=[
     {path: '', component: HomeComponent},
@@ -52,6 +53,7 @@ const app_routes:Routes=[
     {path: 'registro', component: ResgistroComponent},
     {path: 'confirmacion', component: ConfirmacionComponent},
     {path: 'asesorias', component: AsesoriasComponent},
+    {path: 'psicol', component: PsicolComponent},
     {path: '**', pathMatch: 'full', redirectTo:'/'}
     
 ];
